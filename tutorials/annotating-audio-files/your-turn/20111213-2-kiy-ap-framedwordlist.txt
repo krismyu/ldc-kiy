@@ -1,0 +1,25 @@
+item	gloss	kirikiri	tone1	tone2	suffix	word1	word2
+1	for the bandicoot	paRai li	1	R	benefactive	paRai	li
+2	for the bat	torii li	1	R	benefactive	torii	li
+3	for the pigeon	maRuu li	1	R	benefactive	maRuu	li
+4	for the dog	nabii li	2	R	benefactive	nabii	li
+5	for the gecko	kaza li	2	R	benefactive	kaza	li
+6	for the snail	fivaa li	3	R	benefactive	fivaa	li
+7	for the wallaby	fO li	3	R	benefactive	fO	li
+8	for the butterfly	owafi li	3	R	benefactive	owafi	li
+9	for the wasp	naraa li	4	R	benefactive	naraa	li
+10	for the catfish	tava li	5	R	benefactive	tava	li
+11	for the house	kwa li	5	R	benefactive	kwa	li
+12	for the sago-grub	fa li	5	R	benefactive	fa	li
+13	of the bandicoot	paRai jo	1	L	possessive	paRai	jo
+14	of the bat	torii jo	1	L	possessive	torii	jo
+15	of the pigeon	maRuu jo	1	L	possessive	maRuu	jo
+16	of the dog	nabii jo	2	L	possessive	nabii	jo
+17	of the gecko	kaza jo	2	L	possessive	kaza	jo
+18	of the snail	fivaa jo	3	L	possessive	fivaa	jo
+19	of the wallaby	fO jo	3	L	possessive	fO	jo
+20	of the butterfly	owafi jo	3	L	possessive	owafi	jo
+21	of the wasp	naraa jo	4	L	possessive	naraa	jo
+22	of the catfish	tava jo	5	L	possessive	tava	jo
+23	of the house	kwa jo	5	L	possessive	kwa	jo
+24	of the sago-grub	fa jo	5	L	possessive	fa	jo

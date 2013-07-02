@@ -1,0 +1,28 @@
+1	nabi(y)	M.L	N	dog
+2	sije	M.L	N	pig
+3	paRaj	M.ML	N	bandicoot
+4	fiya	L.M	N	fish sp
+5	kribu:	M.ML	N	snake sp
+6	tE.E	M.L	N	mosquito
+7	te.e	L.M	N	child
+8	fri.i	M.L	N	louse
+9	fOi.i	M.H	N	crocodile
+10	kE.E	M.L	N	ant
+11	kwi.i	M.H	N	tree cascus
+12	fO.O	M.L	N	wallaby
+13	fO.O	M.M	N	grass
+14	fO.O	L.M	N	fingernail
+15	kwa.a	M.M	N	house
+16	kwa.a	M.L	N	name
+17	Do.o	M.L	N	tree
+18	ko.o	M.L	N	woman
+19	na.a	M.M	N	rain
+20	pa.a	L.M	N	younger sibling
+21	pa.a	M.M	N	sago
+22	ke.e	M.L	N	ear
+23	ki.i	M.H	N	leech
+24	a.i	M.L	N	father
+25	ja.a	M.M	N	mother
+26	kro.o	M.H	N	frog
+27	sE.ri:	M.L	N	hornbill
+28	kaza	L.M	N	gecko

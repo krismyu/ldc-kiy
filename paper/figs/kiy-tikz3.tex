@@ -1,0 +1,18 @@
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\begin{document}
+
+\begin{tikzpicture}
+\tikzset{edge from parent/.style=
+{draw,
+edge from parent path={(\tikzparentnode.south)
+-- +(0,-8pt)
+-| (\tikzchildnode)}}}
+\Tree [.S [.NP [.Det the ] [.N cat ] ]
+[.VP [.V sat ]
+[.PP [.P on ]
+[.NP [.Det the ] [.N mat ] ] ] ] ]
+\end{tikzpicture}
+
+\end{document}

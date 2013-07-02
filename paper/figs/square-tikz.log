@@ -1,0 +1,472 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  19 JUN 2013 18:03
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\input square-tikz.tex
+(./square-tikz.tex
+(/usr/local/texlive/2012/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2012/05/20 v1.1a Class to compile TeX sub-files stan
+dalone
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count79
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+\sa@internal=\count80
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2012/05/20 v1.1a Default configuration file for 'standalon
+e' class
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\sa@box=\box26
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/frontendlayer/tikz.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/basiclayer/pgf.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/utilities/pgfrcs.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgfutil-common
+.tex
+\pgfutil@everybye=\toks16
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgfutil-latex.
+def
+\pgfutil@abb=\box27
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgfrcs.code.te
+x
+Package: pgfrcs 2010/11/07 v2.10-cvs (rcs-revision 1.25)
+))
+Package: pgf 2008/01/15 v2.10-cvs (rcs-revision 1.12)
+ (/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/basiclayer/pgfcore.sty (/
+usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/systemlayer/pgfsys.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/systemlayer/pgfsys.code.
+tex
+Package: pgfsys 2010/06/30 v2.10-cvs (rcs-revision 1.37)
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgfkeys.code.t
+ex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgfkeysfiltere
+d.code.tex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen105
+\pgf@y=\dimen106
+\pgf@xa=\dimen107
+\pgf@ya=\dimen108
+\pgf@xb=\dimen109
+\pgf@yb=\dimen110
+\pgf@xc=\dimen111
+\pgf@yc=\dimen112
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count90
+\c@pgf@countb=\count91
+\c@pgf@countc=\count92
+\c@pgf@countd=\count93
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/systemlayer/pgfsys-pdfte
+x.def
+File: pgfsys-pdftex.def 2011/12/29  (rcs-revision 1.27)
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/systemlayer/pgfsys-commo
+n-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/systemlayer/pgfsyssoftpa
+th.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count94
+\pgfsyssoftpath@bigbuffer@items=\count95
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/systemlayer/pgfsysprotoc
+ol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2012/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcore.code.
+tex
+Package: pgfcore 2010/04/11 v2.10-cvs (rcs-revision 1.7)
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmath.code.tex
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathcalc.code.te
+x
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathutil.code.te
+x)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathparser.code.
+tex
+\pgfmath@dimen=\dimen113
+\pgfmath@count=\count96
+\pgfmath@box=\box28
+\pgfmath@toks=\toks20
+\pgfmath@stack@operand=\toks21
+\pgfmath@stack@operation=\toks22
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.co
+de.tex
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.ba
+sic.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.tr
+igonometric.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.ra
+ndom.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.co
+mparison.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.ba
+se.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.ro
+und.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.mi
+sc.code.tex)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfunctions.in
+tegerarithmetics.code.tex)))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmathfloat.code.t
+ex
+\c@pgfmathroundto@lastzeros=\count97
+))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorepoints
+.code.tex
+File: pgfcorepoints.code.tex 2012/01/06  (rcs-revision 1.21)
+\pgf@picminx=\dimen114
+\pgf@picmaxx=\dimen115
+\pgf@picminy=\dimen116
+\pgf@picmaxy=\dimen117
+\pgf@pathminx=\dimen118
+\pgf@pathmaxx=\dimen119
+\pgf@pathminy=\dimen120
+\pgf@pathmaxy=\dimen121
+\pgf@xx=\dimen122
+\pgf@xy=\dimen123
+\pgf@yx=\dimen124
+\pgf@yy=\dimen125
+\pgf@zx=\dimen126
+\pgf@zy=\dimen127
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorepathco
+nstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2011/04/17  (rcs-revision 1.25)
+\pgf@path@lastx=\dimen128
+\pgf@path@lasty=\dimen129
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorepathus
+age.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen130
+\pgf@shorten@start@additional=\dimen131
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorescopes
+.code.tex
+File: pgfcorescopes.code.tex 2011/10/01  (rcs-revision 1.37)
+\pgfpic=\box29
+\pgf@hbox=\box30
+\pgf@layerbox@main=\box31
+\pgf@picture@serial@count=\count98
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoregraphi
+cstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen132
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoretransf
+ormations.code.tex
+File: pgfcoretransformations.code.tex 2012/01/06  (rcs-revision 1.12)
+\pgf@pt@x=\dimen133
+\pgf@pt@y=\dimen134
+\pgf@pt@temp=\dimen135
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorequick.
+code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoreobject
+s.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorepathpr
+ocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorearrows
+.code.tex
+File: pgfcorearrows.code.tex 2011/06/07  (rcs-revision 1.12)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoreshade.
+code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen136
+\pgf@sys@shading@range@num=\count99
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoreimage.
+code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoreextern
+al.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box32
+))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorelayers
+.code.tex
+File: pgfcorelayers.code.tex 2011/10/02  (rcs-revision 1.4)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcoretransp
+arency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/basiclayer/pgfcorepatter
+ns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/modules/pgfmoduleshapes.
+code.tex
+File: pgfmoduleshapes.code.tex 2011/07/21  (rcs-revision 1.19)
+\pgfnodeparttextbox=\box33
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/modules/pgfmoduleplot.co
+de.tex
+File: pgfmoduleplot.code.tex 2011/10/22  (rcs-revision 1.10)
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/compatibility/pgfcomp-vers
+ion-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10-cvs (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen137
+\pgf@nodesepend=\dimen138
+)
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/compatibility/pgfcomp-vers
+ion-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10-cvs (rcs-revision 1.1)
+))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/utilities/pgffor.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/utilities/pgfkeys.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgfkeys.code.t
+ex)) (/Users/amoebe/Library/texmf/tex/latex/pgf/latex/pgf/math/pgfmath.sty
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmath.code.tex))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/utilities/pgffor.code.te
+x
+Package: pgffor 2012/01/09 v2.10-cvs (rcs-revision 1.21)
+ (/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen139
+\pgffor@skip=\dimen140
+\pgffor@stack=\toks23
+\pgffor@toks=\toks24
+))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/frontendlayer/tikz/tikz.
+code.tex
+Package: tikz 2012/01/24 v2.10-cvs (rcs-revision 1.89)
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/libraries/pgflibraryplot
+handlers.code.tex
+File: pgflibraryplothandlers.code.tex 2011/12/28 v2.10-cvs (rcs-revision 1.16)
+\pgf@plot@mark@count=\count100
+\pgfplotmarksize=\dimen141
+)
+\tikz@lastx=\dimen142
+\tikz@lasty=\dimen143
+\tikz@lastxsaved=\dimen144
+\tikz@lastysaved=\dimen145
+\tikzleveldistance=\dimen146
+\tikzsiblingdistance=\dimen147
+\tikz@figbox=\box34
+\tikz@tempbox=\box35
+\tikztreelevel=\count101
+\tikznumberofchildren=\count102
+\tikznumberofcurrentchild=\count103
+\tikz@fig@count=\count104
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/modules/pgfmodulematrix.
+code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count105
+\pgfmatrixcurrentcolumn=\count106
+\pgf@matrix@numberofcolumns=\count107
+)
+\tikz@expandcount=\count108
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10-cvs (rcs-revision 1.2)
+)))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10-cvs (rcs-revision 1.1)
+
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/libraries/pgflibraryarro
+ws.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10-cvs (rcs-revision 1.9)
+\arrowsize=\dimen148
+))
+(/Users/amoebe/Library/texmf/tex/latex/pgf/generic/pgf/frontendlayer/tikz/libra
+ries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10-cvs (rcs-revision 1.6)
+) (./square-tikz.aux)
+\openout1 = `square-tikz.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+ABD: EveryShipout initializing macros
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen149
+\scratchbox=\box36
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen150
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+[1
+
+] (./square-tikz.aux) ) 
+Here is how much of TeX's memory you used:
+ 10615 strings out of 493488
+ 208901 string characters out of 3141326
+ 246531 words of memory out of 3000000
+ 13716 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 56i,7n,56p,436b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on square-tikz.pdf (1 page, 1320 bytes).
+PDF statistics:
+ 11 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

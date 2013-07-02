@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[]
+    \addplot[smooth, samples=100, line width = 2, domain=0:10] 
+    (\x,{\x^3 - 15*\x^2 + 3*\x});
+    \addplot[smooth, samples=100, line width = 2, domain=0:10] 
+    (\x,{\x^3 +2*\x^2 + 4*\x});
+  \end{axis}
+\end{tikzpicture}
+\end{document}

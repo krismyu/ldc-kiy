@@ -1,0 +1,41 @@
+:
+:
+:
+:
+:
+koo:MH
+kee:ML MH
+foo:ML MH
+kuu:ML
+kee:ML L-falling
+foo:ML L-falling
+soo:LM
+kee:ML LM
+foo:ML LM
+kee:ML
+foo:ML
+fijree:M.ML
+kee:ML L.ML
+foo:ML L.ML
+siji:M M.L
+nabij:M.H M.L
+parai:M.M M.L
+foo:H> M.L
+kaza:M.H ML
+siji:M.L
+nabij:M.MH
+parai:M.ML
+foo:ML
+kaza:L.LM
+siji:M L L.M
+nabij:M.H L L.M
+parai:M.M L L.M
+foo:HM L L.M
+kaza:MH L L.M
+kruuw:H L  L.M
+kee:HM L L.M
+fuu:HM L L.M
+tidu:ML L L.M
+kruuw:MH
+fuu:HL
+tidu:ML

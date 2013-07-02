@@ -1,0 +1,6 @@
+Time-stamp: <2013-05-10 00:34:47 amoebe>
+
+* [2013-05-10 Fri]
+- Ran scripts/save_intervals_to_wav_sound_files.praat and saved
+  chopped individual small wav files to analysis/tokens
+- I took only the 2nd rep out of typically 4 for each item

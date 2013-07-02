@@ -1,0 +1,104 @@
+% Data flow diagram
+% Author: David Fokkema
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,fit,calc,decorations.markings}
+\tikzstyle{container} = [draw, very thick, dashed, rectangle, rounded
+corners, inner sep=2.5em, fill = yellow!20 ]
+
+\begin{document}
+
+% Define the layers to draw the diagram
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+\begin{center}
+\begin{tikzpicture}[
+  font=\sffamily,
+  every matrix/.style={ampersand replacement=\&,column sep=5cm,row sep=2cm},
+  source/.style={draw,thick,rounded corners,fill=blue!20,inner sep=.2cm},
+  sink/.style={source,fill=green!20},
+  dots/.style={gray,scale=2},
+  to/.style={->,>=stealth',shorten >=1pt,semithick,font=\sffamily\footnotesize},
+  every node/.style={align=center},
+    decoration={
+      markings,
+      mark=at position 1 with {\arrow[scale=1,black]{triangle 60}};
+    }
+]
+
+
+  % Position the nodes using a matrix layout
+  \matrix{
+    % Row 1
+%    \node[sink] (words) {\textbf{UNCLASSIFIED}\\ \textbf{WORDS}};  \& \& \\
+    % Row 2
+      \node[source] (morph) {\textbf{Classify word (morphology)} \\
+      Lexical class (N, V, Adj, $\ldots$) \\ Morphological complexity
+      \\ $\vdots$}; 
+
+       \& \node[source] (sub-frame) {\textbf{Choose substitution
+          frame} \\ Pragmatic context \\ Prosodic position for word \\
+      $\vdots$};\\
+
+
+    % Row 3
+    \node[source] (phon) {\textbf{Classify word (phonology)}\\ Length (TBU) \\
+      Syllabic structure \\ Stress assignment \\ Segmental structure
+      \\ $\vdots$};
+
+       \&  \node[source] (tone) {\textbf{Classify words by pitch
+          contour}};\\
+      \&\&\\ % Buffer row
+      % Row 4
+%    \node[sink] (classes) {\textbf{WORD CLASSES} \\ \textbf{(Substitution lists)}}; \& \& \\
+    };
+
+
+
+    \begin{pgfonlayer}{background}
+
+ \node[container, fit=(phon) (morph)] (class) {};
+    \node at (class.north) [below, node distance=0 and 0]
+    {\textbf{Classify words by} \\ \textbf{morpho-phonological structure}};
+
+ \node[container, fit=(sub-frame) (tone)] (sub) {};
+    \node at (sub.north) [below, node distance=0 and 0]
+    {\textbf{Classify substitution items by pitch} \\ \textbf{in controlled contexts}};
+
+  % % Since these boxes are nodes, it is easy to put text above or below them                          
+  % \node at (first dotted box.north) [above, inner sep=3mm] {\textbf{Transmitter}};
+  % \node at (second dotted box.south) [below, inner sep=3mm] {\textbf{Receiver}};
+    \end{pgfonlayer}
+
+    % Relative node placement
+    \node[sink] at (class.west) {\textbf{UNCLASSIFIED} \\ \textbf{WORDS}}; 
+    \node[sink] at (class.east) {\textbf{WORD CLASSES} \\ \textbf{(Substitution lists)}}; 
+
+  % Draw the arrows between the nodes and label them.
+
+ % 1st pass: draw arrows
+%\draw[line width=1mm, double, double distance=1mm] (class) -- (sub);
+%\draw[
+%    -triangle 45,
+%    line width=1.0mm,
+%    postaction={draw=green, line width=0.25cm, shorten >=0.0cm, -}
+%] (class) -- (sub);
+%\tikz\draw[line width=1mm,-implies,double, double distance=1mm] (0,0)
+%-- (1,0);
+%    \draw [line width=2.0mm, postaction={decorate}, shorten >=10pt] (class) -- (sub);
+  % \draw[to] (morph) -- node[midway,right] {raw event data\\level 1} (morph);
+  % \draw[to] (morph) --
+  %     node[midway,right] {raw event data\\level 1} (monitor);
+  \draw[to] (sub-frame) -> (tone);
+  % \draw[to] (sub-frame) to[bend right=50] node[midway,above] {tone}
+  %     node[midway,below] {level 1} (tone);
+  % \draw[to] (tone) to[bend right=50] node[midway,above] {sub-frame}
+  %     node[midway,below] {level 1} (sub-frame);
+  % \draw[to] (monitor) -- node[midway,above] {events}
+  %     node[midway,below] {level 1} (datastore);
+
+\end{tikzpicture}
+\end{center}
+\end{document}

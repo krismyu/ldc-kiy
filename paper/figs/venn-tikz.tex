@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+%  \tikzset{rect/.style={draw,rectangle,fill=#1,opacity=0.4}}
+\tikzset{
+  block filldraw/.style={% only the fill and draw styles
+        draw,
+        fill=yellow!20,
+    },
+  block rect/.style={% fill, draw + rectangle (without measurements)
+        block filldraw,
+        rectangle,
+      },
+    from/.style args={#1 to #2}{
+        above right={0cm of #1},% needs positioning library
+        to={#1}{#2},
+        minimum width=\xdiff,
+        minimum height=\ydiff,
+    },
+    to/.code 2 args={%
+        \gettikzxy{\xfirst}{\yfirst}{#1}%
+        \gettikzxy{\xsecond}{\ysecond}{#2}%
+        \pgfmathsetmacro\xdiff{\xsecond-\xfirst}%
+        \pgfmathsetmacro\ydiff{\ysecond-\yfirst}%
+    }
+}
+
+\newcommand*{\gettikzxy}[3]{%
+    \tikz@scan@one@point\pgfutil@firstofone(#3)\relax
+    \edef#1{\the\pgf@x}%
+    \edef#2{\the\pgf@y}%
+}
+
+\begin{document}
+% http://tex.stackexchange.com/questions/26096/tikz-labelling-venn-diagram
+\begin{tikzpicture}
+
+
+\node[block rect, from={0,0 to 2,.5}]                 {from-to};
+
+
+  % \node [rect = red] (A) at (0,0) (1,1){$A$};
+  % \node [rect = blue] (B) at (1,2) (3,4) {$B$};
+  % \node [rect = green] (C) at (0:4cm) {$C$};
+  % \node [rect = red] (Z) at (0,0) {$A$};
+
+  % \node[left] at (barycentric cs:A=1/2,B=1/2 ) {$A \cap B$}; 
+  % \node[below] at (barycentric cs:A=1/2,C=1/2 ) {$A \cap C$};   
+  % \node[right] at (barycentric cs:B=1/2,C=1/2 ) {$B \cap C$};   
+  % \node[below] at (barycentric cs:A=1/3,B=1/3,C=1/3 ){$A \cap B \cap C$};
+\end{tikzpicture}  
+\end{document}

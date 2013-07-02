@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{natbib}
+\usepackage{fullpage}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{Sweave}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{lastpage}
+\usepackage{timestamp}
+\usepackage[section] {placeins} % http://www.douglasvanbossuyt.com/2008/11/18/latex-too-many-unprocessed-floats-problem-and-solution/
+% \SweaveOpts{keep.source=TRUE} % don't remove source code comments
+\SweaveOpts{strip.white=false}
+\SweaveOpts{prefix.string=figs/cant-context} % save auto-generated figures in
+                                % figs/, prefixed by cant-f0creak-
+
+\setlength{\bibsep}{0.0pt}
+\setlength{\headheight}{15.2pt}
+\setlength{\headsep}{12pt}
+\pagestyle{fancyplain}
+\fancyhf{}
+
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+\newenvironment{packed_item}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+\lhead{Kristine M. Yu}
+\rhead{Kirkiri monosyllable possessive NP analysis DRAFT \timestamp}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+
+\begin{document}
+
+<<label = load-libs, echo = FALSE>>=
+
+# Load needed libraries
+
+library(Hmisc) # for exporting latex tables
+library(xtable)
+library(plyr) # for manipulating data/cross-tabulation
+library(ggplot2) # for plotting
+library(nlme)
+library(multcomp) # Load library for multiple comparisons
+
+# Load these later: conflict with nlme!
+#library(lme4) # crossed ranefs -> disaster with nlme
+#library(languageR)
+# Displaying results
+source("~/docs/mind/software/R/lmer-tables.R") # from Paul Metzner and Judith Degen, thanks for lmer/glm output!
+
+# Centering: note that we force numeric data type on the variable.
+center <- function (x) { scale(as.numeric(x), scale=FALSE) } # center
+
+@ 
+
+
+<<label = read, echo = FALSE>>=
+
+# Read back in table that was written to file
+dat.dur <- read.table("duration-analysis.log",header=T, stringsAsFactors=FALSE, sep="\t")
+
+dat.f0 <- read.table("f0-analysis.log",header=T, stringsAsFactors=FALSE, sep="\t")
+
+### I had to edit the log files. I replaced --undefined-- with NA for dat.f0. I fixed line breaks at the end of dat.dur and fiddled with the header.
+
+@ 
+
+# Reorder context factor levels by mono, pre, post, tri, iso
+dat$context <- factor(dat$context)
+
+#levels(dat$context)
+dat$context = factor(dat$context,levels(dat$context)[c(2, 4, 3, 5, 1)])
+
+dat$tone <- factor(dat$tone, levels = c("55","25","33","21","23","22"))
+                   
+# Let's get an id that specifies an individual item and rep together
+dat <- within(dat, item.full <- paste(as.character(item),item.rep,sep="-"))
+
+# Let's get an id that specifies an individual item and rep and speaker together
+dat <- within(dat, speaker.item.full <- paste(speaker,as.character(item),item.rep,sep="-"))
+
+
+## Subset by iso and noniso for later analysis. The iso condition is really like a separate experiment from the other conditions. And I want to drop the levels unused.
+
+dat.niso <- subset(dat, context != "iso")
+dat.niso$context <- dat.niso$context[drop = TRUE]

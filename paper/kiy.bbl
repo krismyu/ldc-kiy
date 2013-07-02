@@ -1,0 +1,625 @@
+\begin{thebibliography}{101}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Abramson(1972)}]{Abramson:1972}
+Abramson, Arthur~S. 1972.
+\newblock Tonal experiments with whispered {T}hai.
+\newblock In {\em Papers on linguistics and phonetics in memory of {P}ierre
+  {D}elattre\/}, ed. A.~Valdman, 31--44. The Hague: Mouton.
+
+\bibitem[{Abramson(1978)}]{Abramson:1978}
+Abramson, Arthur~S. 1978.
+\newblock Static and dynamic acoustic cues in distinctive tones.
+\newblock {\em Language and Speech\/} 21:319--325.
+
+\bibitem[{Andruski(2006)}]{Andruski:2006}
+Andruski, Jean~E. 2006.
+\newblock Tone clarity in mixed pitch/phonation-type tones.
+\newblock {\em Journal of Phonetics\/} 34:388--404.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6WKT-4KSD811-1/2/7f4f8c907c4266b9719184d321c12fc9}.
+
+\bibitem[{Andruski and Costello(2004)}]{Andruski:2004}
+Andruski, Jean~E., and James Costello. 2004.
+\newblock Using polynomial equations to model pitch contour shape in lexical
+  tones: An example from {G}reen {M}ong.
+\newblock {\em Journal of the International Phonetic Association\/}
+  34:125--140.
+
+\bibitem[{Andruski and Ratliff(2000)}]{Andruski:2000}
+Andruski, Jean~E., and Martha Ratliff. 2000.
+\newblock Phonation types in production of phonological tone: The case of
+  {G}reen {M}ong.
+\newblock {\em Journal of the International Phonetic Association\/} 30:37--61.
+
+\bibitem[{Baayen(2008)}]{Baayen:2008}
+Baayen, R.~H. 2008.
+\newblock {\em Analyzing linguistic data: a practical introduction to
+  statistics\/}.
+\newblock Cambridge University Press.
+
+\bibitem[{Babel(2012)}]{Babel:2012a}
+Babel, Molly. 2012.
+\newblock Evidence for phonetic and social selectivity in spontaneous phonetic
+  imitation.
+\newblock {\em Journal of Phonetics\/} 40:177--189.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0095447011000763}.
+
+\bibitem[{Babel and Bulatov(2012)}]{Babel:2012}
+Babel, Molly, and Dasha Bulatov. 2012.
+\newblock The role of fundamental frequency in phonetic accommodation.
+\newblock {\em Language and Speech\/} 55:231--248.
+\newblock \urlprefix\url{http://las.sagepub.com/content/55/2/231}.
+
+\bibitem[{Baken and Orlikoff(2000{\natexlab{a}})}]{Baken:2000}
+Baken, R.~J., and Robert~F. Orlikoff. 2000{\natexlab{a}}.
+\newblock {\em Clinical measurement of speech and voice\/}.
+\newblock San Diego, CA: Singular Thomson Learning, 2nd edition.
+
+\bibitem[{Baken and Orlikoff(2000{\natexlab{b}})}]{Baken:2000a}
+Baken, R.~J., and Robert~F. Orlikoff. 2000{\natexlab{b}}.
+\newblock {\em Clinical measurement of speech and voice\/}, chapter Vocal
+  fundamental frequency, 145--223.
+\newblock 6. San Diego, CA: Singular Thomson Learning, 2nd edition.
+
+\bibitem[{Boersma(1993)}]{Boersma:1993}
+Boersma, Paul. 1993.
+\newblock Accurate short-term analysis of the fundamental frequency and the
+  harmonics-to-noise ratio of a sampled sound.
+\newblock In {\em Proceedings of the {I}nstitute of {P}honetic Sciences,
+  {A}msterdam\/}, volume~17, 97--110.
+
+\bibitem[{Boersma and Weenink(2010)}]{Boersma:2010}
+Boersma, Paul, and David Weenink. 2010.
+\newblock Praat: doing phonetics by computer (version 5.1.32) [computer
+  program].
+\newblock \texttt{http://www.praat.org}.
+
+\bibitem[{Brindley(1960)}]{Brindley:1960}
+Brindley, {G.}{S.} 1960.
+\newblock {\em Physiology of the retina and the visual pathway\/}.
+\newblock London: Edward Arnold Ltd.
+
+\bibitem[{Bruce(1977)}]{Bruce:1977}
+Bruce, G\"osta. 1977.
+\newblock {\em Swedish word accents in sentence perspective\/}.
+\newblock Lund: {CWK Gleerup}.
+
+\bibitem[{Brunelle(2009)}]{Brunelle:2009}
+Brunelle, Marc. 2009.
+\newblock Tone perception in {N}orthern and {S}outhern {V}ietnamese.
+\newblock {\em Journal of Phonetics\/} 37:79--96.
+
+\bibitem[{Carpenter(1997)}]{Carpenter:1997}
+Carpenter, Bob. 1997.
+\newblock {\em Type-logical semantics\/}.
+\newblock Cambridge, Massachusetts: MIT Press.
+
+\bibitem[{Chandrasekaran et~al.(2007)Chandrasekaran, Gandour, and
+  Krishnan}]{Chandrasekaran:2007}
+Chandrasekaran, Bharath, Jackson~T. Gandour, and Ananthanarayan Krishnan. 2007.
+\newblock Neuroplasticity in the processing of pitch dimensions: A
+  multidimensional scaling analysis of the mismatch negativity.
+\newblock {\em Restorative Neurology \& Neuroscience\/} 25:195--210.
+
+\bibitem[{Chao(1930)}]{Chao:1930}
+Chao, Yuen-Ren. 1930.
+\newblock A system of tone-letters.
+\newblock {\em Le Ma\^{i}tre Phon\'etique\/} 45:24--27.
+
+\bibitem[{Chao(1968)}]{Chao:1968}
+Chao, Yuen~Ren. 1968.
+\newblock {\em A grammar of spoken {C}hinese\/}.
+\newblock Berkeley, CA: University of California Press.
+
+\bibitem[{Chen(2000)}]{Chen:2000}
+Chen, Matthew~Y. 2000.
+\newblock {\em Tone sandhi\/}.
+\newblock Cambridge University Press.
+
+\bibitem[{Clark(1978)}]{Clark:1978}
+Clark, Mary~Morris. 1978.
+\newblock {\em A dynamic treatment of tone with special attention to the tonal
+  system of {I}gbo\/}.
+\newblock Doctoral Dissertation, University of New Hampshire.
+
+\bibitem[{Connell(2000)}]{Connell:2000}
+Connell, Bruce. 2000.
+\newblock The perception of lexical tone in mambila.
+\newblock {\em Language and Speech\/} 43:163--182.
+\newblock
+  \urlprefix\url{http://www.ingentaconnect.com/content/king/ls/2000/00000043/00000002/art00002}.
+
+\bibitem[{Connell(2002)}]{Connell:2002}
+Connell, Bruce. 2002.
+\newblock Tone languages and the universality of intrinsic f0: evidence from
+  africa.
+\newblock {\em Journal of Phonetics\/} 30:101--129.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6WKT-45F4DH1-4/2/b256d873dfeb4047c8c6176fd5f2a3da}.
+
+\bibitem[{{DiCanio}(2009)}]{DiCanio:2009}
+{DiCanio}, Christian~T. 2009.
+\newblock The phonetics of register in {T}akhian {T}hong {C}hong.
+\newblock {\em {J}ournal of the {I}nternational {P}honetic {A}ssociation\/}
+  39:162--188.
+
+\bibitem[{Eady et~al.(1986)Eady, Cooper, Klouda, Mueller, and
+  Lotts}]{Eady:1986}
+Eady, Stephen~J., William~E. Cooper, Gayle~V. Klouda, Pamela~R. Mueller, and
+  Dan~W. Lotts. 1986.
+\newblock Acoustical characteristics of sentential focus: narrow vs. broad and
+  single vs. dual focus environments.
+\newblock {\em Language and Speech\/} 29:233--280.
+
+\bibitem[{Esposito(2012)}]{Esposito:2012}
+Esposito, Christina~M. 2012.
+\newblock An acoustic and electroglottographic study of white hmong tone and
+  phonation.
+\newblock {\em Journal of Phonetics\/} 40:466--476.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0095447012000174}.
+
+\bibitem[{Esposito et~al.(2009)Esposito, Ptacek, and Yang}]{Esposito:2009}
+Esposito, Christina~M., Joseph Ptacek, and Sherrie Yang. 2009.
+\newblock An acoustic and electroglottographic study of white hmong phonation.
+\newblock {\em The Journal of the Acoustical Society of America\/} 126:2223.
+\newblock \urlprefix\url{http://link.aip.org/link/?JAS/126/2223/1}.
+
+\bibitem[{Fernald and Simon(1984)}]{fernald:1984}
+Fernald, Anne, and Thomas Simon. 1984.
+\newblock Expanded intonation contours in mothers' speech to newborns.
+\newblock {\em Developmental Psychology\/} 20:104--113.
+
+\bibitem[{Fisher(1925)}]{Fisher:1925}
+Fisher, Ronald~A. 1925.
+\newblock {\em Statistical methods for research workers\/}.
+\newblock Edinburgh, Scotland: Oliver and Boyd.
+
+\bibitem[{Fisher(1935)}]{Fisher:1935}
+Fisher, Sir Ronald~A. 1935.
+\newblock {\em The design of experiments\/}.
+\newblock New York: Hafner Publishing Company, (9th edition 1971) edition.
+
+\bibitem[{Fok(1974)}]{Fok:1974}
+Fok, C.Y.Y. 1974.
+\newblock {\em A perceptual study of tones in {C}antonese\/}.
+\newblock Number~18 in Occasional Papers and Monographs. Hong Kong: University
+  of Hong Kong, Centre of Asian Studies.
+
+\bibitem[{Fon and Chiang(1999)}]{Fon:1999}
+Fon, Janice, and Wen-Yu Chiang. 1999.
+\newblock What does {C}hao have to say about tones.
+\newblock {\em Journal of {C}hinese {L}inguistics\/} 27:13--37.
+
+\bibitem[{Fougeron and Jun(1998)}]{Fougeron:1998}
+Fougeron, C\'{e}cile, and {Sun-Ah} Jun. 1998.
+\newblock Rate effects on french intonation: prosodic organization and phonetic
+  realization.
+\newblock {\em Journal of Phonetics\/} 26:45--69.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6WKT-45J4YMN-8/2/9470a0273f434170254bcf4dc9ab8ec7}.
+
+\bibitem[{Fu and Zeng(2000)}]{Fu:2000}
+Fu, Qian-Jie, and Fan-Gang Zeng. 2000.
+\newblock Identification of temporal envelope cues in {C}hinese tone
+  recognition.
+\newblock {\em Asia Pacific Journal of Speech, Language and Hearing\/}
+  5:45--57.
+
+\bibitem[{Fu et~al.(1998)Fu, Zeng, Shannon, and Soli}]{Fu:1998}
+Fu, {Qian-Jie}, {Fan-Gang} Zeng, Robert~V. Shannon, and Sigfrid~D. Soli. 1998.
+\newblock Importance of tonal envelope cues in chinese speech recognition.
+\newblock {\em The Journal of the Acoustical Society of America\/}
+  104:505--510.
+\newblock \urlprefix\url{http://link.aip.org/link/?JAS/104/505/1}.
+
+\bibitem[{Gamut(1992)}]{Gamut:1992}
+Gamut, L.T.F. 1992.
+\newblock {\em Logic, language and meaning\/}, volume~2.
+\newblock Chicago: Chicago University Press.
+
+\bibitem[{Gandour(1981)}]{Gandour:1981}
+Gandour, Jack. 1981.
+\newblock Perceptual dimensions of tone: evidence from {C}antonese.
+\newblock {\em Journal of {C}hinese {L}inguistics\/} 9:20--36.
+
+\bibitem[{Gandour(1983)}]{Gandour:1983}
+Gandour, Jack. 1983.
+\newblock Tone perception in {F}ar {E}astern languages.
+\newblock {\em Journal of {P}honetics\/} 11:149--175.
+
+\bibitem[{Gandour et~al.(1999)Gandour, Turntavitikul, and
+  Satthamnuwong}]{Gandour:1999}
+Gandour, Jack, Apiluck Turntavitikul, and Nakarin Satthamnuwong. 1999.
+\newblock Effects of speaking rate on {T}hai tones.
+\newblock {\em Phonetica\/} 56:123--134.
+
+\bibitem[{Gandour(1979)}]{Gandour:1979}
+Gandour, Jackson~T. 1979.
+\newblock Perceptual dimensions of tone: {T}hai.
+\newblock {\em South-east Asian Linguistic Studies\/} 3:277--300.
+
+\bibitem[{Gandour and Harshman(1978)}]{Gandour:1978a}
+Gandour, Jackson~T., and Richard~A. Harshman. 1978.
+\newblock Crosslanguage differences in tone perception: a multidimensional
+  scaling investigation.
+\newblock {\em Language and Speech\/} 21:1--33.
+
+\bibitem[{Gauthier et~al.(2007)Gauthier, Shi, and Xu}]{Gauthier:2007}
+Gauthier, Bruno, Rushen Shi, and Yi~Xu. 2007.
+\newblock Learning phonetic categories by tracking movements.
+\newblock {\em Cognition\/} 103:80--106.
+
+\bibitem[{Gerratt and Kreiman(2001)}]{Gerratt:2001}
+Gerratt, Bruce~R., and Jody Kreiman. 2001.
+\newblock Toward a taxonomy of nonmodal phonation.
+\newblock {\em Journal of Phonetics\/} 29:365--381.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6WKT-457CJ0P-J/2/a40000ac94fd4ba475653abd2ec493db}.
+
+\bibitem[{Goldsmith(1990)}]{Goldsmith:1990}
+Goldsmith, John~A. 1990.
+\newblock {\em Autosegmental and metrical phonology\/}.
+\newblock Basil Blackwell.
+
+\bibitem[{Goldsmith(1976)}]{Goldsmith:1976}
+Goldsmith, John~Anton. 1976.
+\newblock {\em Autosegmental phonology\/}.
+\newblock Doctoral Dissertation, Massachusetts Institute of Technology.
+
+\bibitem[{G\r{a}rding et~al.(1986)G\r{a}rding, Kratochvil, and
+  Svantesson}]{Garding:1986}
+G\r{a}rding, Eva, Paul Kratochvil, and Jan-Olof Svantesson. 1986.
+\newblock Tone 4 and {T}one 3 discrimination in modern {S}tandard {C}hinese.
+\newblock {\em Language and Speech\/} 29:281--293.
+
+\bibitem[{Gussenhoven(2004)}]{Gussenhoven:2004}
+Gussenhoven, Carlos. 2004.
+\newblock {\em The phonology of tone and intonation\/}.
+\newblock Cambridge University Press.
+
+\bibitem[{Hardison(2004)}]{Hardison:2004}
+Hardison, Debra~M. 2004.
+\newblock Generalization of computer-assisted prosody training: Quantitative
+  and qualitative findings.
+\newblock {\em Language Learning \& Technology\/} 8:34--52.
+
+\bibitem[{Hayes(1989)}]{Hayes:1989}
+Hayes, Bruce. 1989.
+\newblock The prosodic hierarchy in meter.
+\newblock In {\em Rhythm and meter\/}, ed. Paul Kiparsky and Gilbert Youmans,
+  201--260. Orlando, FL: Academic Press.
+
+\bibitem[{Hermes(1998)}]{Hermes:1998}
+Hermes, Dik~J. 1998.
+\newblock Auditory and visual simularity of pitch contours.
+\newblock {\em Journal of Speech, Language and Hearing Research\/} 41:63--72.
+
+\bibitem[{Hess(1983)}]{hess:1983}
+Hess, Wolfgang. 1983.
+\newblock {\em Pitch determination of speech signals: algorithms and
+  devices\/}.
+\newblock {Springer-Verlag}.
+
+\bibitem[{Hombert(1976)}]{Hombert:1976}
+Hombert, Jean-Marie. 1976.
+\newblock Perception of tones of bisyllabic nouns in {Y}oruba.
+\newblock {\em Studies in {A}frican Linguistics\/} Supplement 6.
+
+\bibitem[{Hombert(1978)}]{Hombert:1978}
+Hombert, Jean-Marie. 1978.
+\newblock Consonant types, vowel quality, and tone.
+\newblock In {\em Tone: a linguistic survey\/}, ed. Victoria~A. Fromkin,
+  77--111. Academic Press.
+
+\bibitem[{House(1990)}]{House:1990}
+House, David. 1990.
+\newblock {\em Tonal perception in speech\/}.
+\newblock Lund, Sweden: Lund University Press.
+
+\bibitem[{Howie(1976)}]{Howie:1976}
+Howie, John~Marshall. 1976.
+\newblock {\em Acoustical studies of mandarin vowels and tones\/}.
+\newblock Cambridge University Press.
+
+\bibitem[{Hyman(1985)}]{Hyman:1985}
+Hyman, Larry~M. 1985.
+\newblock Word domains and downstep in bamileke-dschang.
+\newblock {\em Phonology Yearbook\/} 2:47--83.
+\newblock \urlprefix\url{http://www.jstor.org/stable/4419952}.
+
+\bibitem[{Hyman(2001)}]{Hyman:2001}
+Hyman, Larry~M. 2001.
+\newblock Fieldwork as a state of mind.
+\newblock In {\em Linguistic fieldwork\/}, ed. Paul Newman and Martha Ratliff,
+  15--33. Cambridge, UK: Cambridge University Press.
+
+\bibitem[{Hyman(2007)}]{Hyman:2007}
+Hyman, Larry~M. 2007.
+\newblock Elicitation as experimental phonology: Thlantlang lai tonology.
+\newblock In {\em Experimental approaches to phonology\/}, ed. Maria-Josep
+  Sol{\'e}, Patrice~Speeter Beddor, and Manjari Ohala, 7--24. Oxford; New York:
+  Oxford University Press.
+
+\bibitem[{Hyman(2011)}]{Hyman:2011b}
+Hyman, Larry~M. 2011.
+\newblock Tone: Is it different?
+\newblock In {\em The handbook of phonological theory\/}, ed. John Goldsmith,
+  Jason Riggle, and Alan C.~L. Yu, 197--239. Wiley-Blackwell.
+\newblock
+  \urlprefix\url{http://onlinelibrary.wiley.com/doi/10.1002/9781444343069.ch7/summary}.
+
+\bibitem[{Jaeger et~al.(2014)Jaeger, Norcliffe, and Alice
+  C.~Harris}]{Jaeger:2014}
+Jaeger, T.~Florian, Elisabeth Norcliffe, and eds. Alice C.~Harris. 2014.
+\newblock Laboratory in the field.
+
+\bibitem[{Jun(2005)}]{Jun:2005}
+Jun, Sun-Ah. 2005.
+\newblock Prosodic typology.
+\newblock In {\em Prosodic typology\/}, ed. Sun-Ah Jun, chapter~16. Oxford
+  University Press.
+
+\bibitem[{Katz and Selkirk(2011)}]{Katz:2011}
+Katz, Jonah, and Elisabeth Selkirk. 2011.
+\newblock Contrastive focus vs. discourse-new: Evidence from phonetic
+  prominence in english.
+\newblock {\em Language\/} 87:771--816.
+\newblock
+  \urlprefix\url{http://muse.jhu.edu/journals/language/v087/87.4.katz.html}.
+
+\bibitem[{Keating et~al.(2011)Keating, Esposito, Garellek, Khan, and
+  Kuang}]{Keating:2011}
+Keating, Patricia, Christina Esposito, Marc Garellek, Sameer Khan, and Jianjing
+  Kuang. 2011.
+\newblock Phonation contrasts across languages.
+\newblock In {\em Proceedings of the 17th International Congress of Phonetic
+  Sciences\/}, 1046--1049. Hong Kong, China.
+
+\bibitem[{Khouw and Ciocca(2007)}]{Khouw:2007}
+Khouw, Edward, and Valter Ciocca. 2007.
+\newblock Perceptual correlates of {C}antonese tones.
+\newblock {\em Journal of Phonetics\/} 35:104--117.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6WKT-4MFJ1RT-2/2/ac7c29117f08b9e603ecf7a47463e86e}.
+
+\bibitem[{Kochanski et~al.(2005)Kochanski, Grabe, Coleman, and
+  Rosner}]{Kochanski:2005}
+Kochanski, G., E.~Grabe, J.~Coleman, and B.~Rosner. 2005.
+\newblock Loudness predicts prominence: Fundamental frequency lends little.
+\newblock {\em The Journal of the Acoustical Society of America\/}
+  118:1038--1054.
+
+\bibitem[{Krishnan and Gandour(2009)}]{Krishnan:2009a}
+Krishnan, Ananthanarayan, and Jackson~T. Gandour. 2009.
+\newblock The role of the auditory brainstem in processing
+  linguistically-relevant pitch patterns.
+\newblock {\em Brain and Language\/} 110:135--148.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6WC0-4W2M6N5-1/2/7f9877125ad283b8ff5b5d991e1d7d7f}.
+
+\bibitem[{Krishnan et~al.(2005)Krishnan, Xu, Gandour, and
+  Cariani}]{Krishnan:2005}
+Krishnan, Ananthanarayan, Yisheng Xu, Jackson Gandour, and Peter Cariani. 2005.
+\newblock Encoding of pitch in the human brainstem is sensitive to language
+  experience.
+\newblock {\em Cognitive Brain Research\/} 25:161--168.
+
+\bibitem[{Kuhl(2004)}]{Kuhl:2004}
+Kuhl, Patricia~K. 2004.
+\newblock Early language acquisition: cracking the speech code.
+\newblock {\em Nat Rev Neurosci\/} 5:831--843.
+
+\bibitem[{Kuo et~al.(2007)Kuo, Xu, and Yip}]{Kuo:2007}
+Kuo, {Yu-ching}, Yi~Xu, and Moira Yip. 2007.
+\newblock The phonetics and phonology of apparent cases of iterative change in
+  {S}tandard {C}hinese.
+\newblock In {\em Tones and tunes: Experimental studies in word and sentence
+  prosody\/}, ed. Carlos Gussenhoven and Tomas Riad, volume~2, 211--235.
+  Berlin, Germany: Mouton de Gruyter.
+
+\bibitem[{Ladefoged(2003)}]{Ladefoged:2003}
+Ladefoged, Peter. 2003.
+\newblock {\em Phonetic data analysis\/}.
+\newblock Blackwell Publishing.
+
+\bibitem[{Leben(1973)}]{Leben:1973}
+Leben, William. 1973.
+\newblock {\em Suprasegmental phonology\/}.
+\newblock Doctoral Dissertation, Massachusetts Institute of Technology,
+  Cambridge, MA.
+
+\bibitem[{Liberman and Pierrehumbert(1984)}]{Liberman:1984}
+Liberman, Mark, and Janet Pierrehumbert. 1984.
+\newblock Intonational invariance under changes in pitch range and length.
+\newblock In {\em Language sound structure\/}, 157--233. The MIT Press.
+
+\bibitem[{Liu and Samuel(2004)}]{Liu:2004}
+Liu, Siyun, and Arthur~G. Samuel. 2004.
+\newblock Perception of mandarin lexical tones when f0 information is
+  neutralized.
+\newblock {\em Language and Speech\/} 47:109--138.
+\newblock \urlprefix\url{http://las.sagepub.com/cgi/content/abstract/47/2/109}.
+
+\bibitem[{Lively et~al.(1993)Lively, Logan, and Pisoni}]{Lively:1993}
+Lively, Scott~E., John~S. Logan, and David~B. Pisoni. 1993.
+\newblock Training japanese listeners to identify english /r/ and /l/. {II:}
+  the role of phonetic environment and talker variability in learning new
+  perceptual categories.
+\newblock {\em The Journal of the Acoustical Society of America\/}
+  94:1242--1255.
+\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3509365/},
+  {PMID:} 8408964 {PMCID:} {PMC3509365}.
+
+\bibitem[{Maddieson(1978)}]{Maddieson:1978}
+Maddieson, Ian. 1978.
+\newblock The frequency of tones.
+\newblock {\em UCLA Working Papers in Phonetics\/} 41:43--52.
+
+\bibitem[{Mattock and Burnham(2006)}]{Mattock:2006}
+Mattock, Karen, and Denis Burnham. 2006.
+\newblock Chinese and english infants' tone perception: Evidence for perceptual
+  reorganization.
+\newblock {\em Infancy\/} 10:241.
+
+\bibitem[{Mattock et~al.(2008)Mattock, Molnar, Polka, and
+  Burnham}]{Mattock:2008}
+Mattock, Karen, Monika Molnar, Linda Polka, and Denis Burnham. 2008.
+\newblock The developmental course of lexical tone perception in the first year
+  of life.
+\newblock {\em Cognition\/} 106:1367--1381.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6T24-4PG2KY6-2/2/7ab0bcca467169a4878b39309c0e1d15}.
+
+\bibitem[{Montgomery(2005)}]{Montgomery:2005}
+Montgomery, John~C. 2005.
+\newblock {\em Design and analysis of experiments\/}.
+\newblock John Wiley \& Sons, Inc., 6th edition.
+
+\bibitem[{Pham(2003)}]{Pham:2003}
+Pham, Andrea~Hoa. 2003.
+\newblock The key phonetic properties of {V}ietnamese tone: reassessment.
+\newblock In {\em 15th ICPhS Barcelona\/}, 1703--1706.
+
+\bibitem[{Pierrehumbert(1990)}]{Pierrehumbert:1990a}
+Pierrehumbert, Janet~B. 1990.
+\newblock Phonological and phonetic representation.
+\newblock {\em Journal of Phonetics\/} 18:375--394.
+
+\bibitem[{Pike(1948)}]{Pike:1948}
+Pike, Kenneth~L. 1948.
+\newblock {\em Tone languages\/}.
+\newblock University of Michigan, Ann Arbor.
+
+\bibitem[{Plato(360 B.C.E)}]{Plato:360}
+Plato. 360 B.C.E.
+\newblock {\em Phaedrus\/}.
+\newblock \urlprefix\url{http://classics.mit.edu/Plato/phaedrus.html}.
+
+\bibitem[{Rose(1987)}]{Rose:1987}
+Rose, Phil. 1987.
+\newblock Considerations in the normalisation of the fundamental frequency of
+  linguistic tone.
+\newblock {\em Speech Communication\/} 6:343--352.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/B6V1C-48V218W-BS/2/6d65fd3baa7708bedca1444f65d43b91}.
+
+\bibitem[{Rose(1988)}]{Rose:1988}
+Rose, Philip~John. 1988.
+\newblock On the non-equivalence of fundamental frequency and pitch in tonal
+  description.
+\newblock In {\em Prosodic analysis and {A}sian linguistics: to honour {R.}
+  {K.} {S}prigg\/}, Pacific Linguisics, C-104, 55--82. Australian National
+  University: School of Pacific and Asian studies.
+
+\bibitem[{Rosenbaum(1999)}]{Rosenbaum:1999}
+Rosenbaum, Paul~R. 1999.
+\newblock Choice as an alternative to control in observational studies.
+\newblock {\em Statistical Science\/} 14:259--304.
+\newblock \urlprefix\url{http://projecteuclid.org/euclid.ss/1009212410}.
+
+\bibitem[{Rost and McMurray(2009)}]{Rost:2009}
+Rost, Gwyneth~C., and Bob McMurray. 2009.
+\newblock Speaker variability augments phonological processing in early word
+  learning.
+\newblock {\em Developmental Science\/} 12:339--349.
+
+\bibitem[{Saville and Wood(1986)}]{Saville:1986}
+Saville, D.~J., and G.~R. Wood. 1986.
+\newblock A method for teaching statistics using {N-Dimensional} geometry.
+\newblock {\em The American Statistician\/} 40:205--214.
+\newblock \urlprefix\url{http://www.jstor.org/stable/2684537}.
+
+\bibitem[{{Shattuck-Hufnagel} and Turk(1996)}]{Shattuck-Hufnagel:1996}
+{Shattuck-Hufnagel}, Stefanie, and Alice~E. Turk. 1996.
+\newblock A prosody tutorial for investigators of auditory sentence processing.
+\newblock {\em Journal of Psycholinguistic Research\/} 25:193--247.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/BF01708572}.
+
+\bibitem[{Stevens et~al.(1937)Stevens, Volkmann, and Newman}]{Stevens:1937}
+Stevens, S.~S., J.~Volkmann, and E.~B. Newman. 1937.
+\newblock A scale for the measurement of the psychological magnitude pitch.
+\newblock {\em The Journal of the Acoustical Society of America\/} 8:185--190.
+\newblock \urlprefix\url{http://link.aip.org/link/?JAS/8/185/1}.
+
+\bibitem[{Sun and Xu(2002)}]{Sun:2002a}
+Sun, Xuejing, and Yi~Xu. 2002.
+\newblock Perceived pitch of synthesized voice with alternate cycles.
+\newblock {\em Journal of Voice\/} 16:443--459.
+
+\bibitem[{Talkin(1995)}]{Talkin:1995}
+Talkin, David. 1995.
+\newblock A robust algorithm for pitch tracking ({RAPT}).
+\newblock In {\em Speech coding and synthesis\/}, ed. W.~B. Kleijn and K.~K.
+  Paliwal, 495--518. Elsevier Science Inc.
+
+\bibitem[{Teller(1984)}]{Teller:1984}
+Teller, Davida~Y. 1984.
+\newblock Linking propositions.
+\newblock {\em Vision Research\/} 24:1233--1246.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/0042698984901780}.
+
+\bibitem[{Turk et~al.(2006)Turk, Nakai, and Sugahara}]{Turk:2006}
+Turk, Alice, Satsuki Nakai, and Mariko Sugahara. 2006.
+\newblock Acoustic segment durations in prosodic research: a practical guide.
+\newblock In {\em Methods in empirical prosody research\/}, ed. Stefan Sudhoff,
+  Denisa Lenertov\'a, Roland Meyer, Sandra Pappert, Petra Augurzky, Ina
+  Mleinek, Nicole Richter, and Johannes Schlie\ss{}er, 1--28. Walter de
+  Gruyter.
+
+\bibitem[{Vance(1977)}]{Vance:1977}
+Vance, Timothy~J. 1977.
+\newblock Tonal distinctions in {C}antonese.
+\newblock {\em Phonetica\/} 34:93--107.
+
+\bibitem[{Whalen and Xu(1992)}]{Whalen:1992}
+Whalen, D.~H., and Yi~Xu. 1992.
+\newblock Information for {M}andarin tones in the amplitude contour and in
+  brief segments.
+\newblock {\em Phonetica\/} 49:25--47.
+
+\bibitem[{Wong and Diehl(2003)}]{Wong:2003}
+Wong, Patrick C.~M., and Randy~L. Diehl. 2003.
+\newblock Perceptual normalization for inter- and intratalker variation in
+  {C}antonese level tones.
+\newblock {\em Journal of Speech, Language \& Hearing Research\/} 46:413--421.
+\newblock \urlprefix\url{http://jslhr.asha.org/cgi/content/abstract/46/2/413}.
+
+\bibitem[{Xu(1997)}]{Xu:1997a}
+Xu, Yi. 1997.
+\newblock Contextual tonal variations in {M}andarin.
+\newblock {\em Journal of {P}honetics\/} 25:61--83.
+
+\bibitem[{Xu et~al.(2006)Xu, Krishnan, and Gandour}]{Xu:2006a}
+Xu, Yisheng, Ananthanarayan Krishnan, and Jackson~T. Gandour. 2006.
+\newblock Specificity of experience-dependent pitch representation in the
+  brainstem.
+\newblock {\em {NeuroReport}\/} 17:1601--1605.
+
+\bibitem[{Yurovsky et~al.(2012)Yurovsky, Hidaka, and Wu}]{Yurovsky:2012}
+Yurovsky, Daniel, Shohei Hidaka, and Rachel Wu. 2012.
+\newblock Quantitative linking hypotheses for infant eye movements.
+\newblock {\em {PLoS} {ONE}\/} 7:e47419.
+\newblock \urlprefix\url{http://dx.doi.org/10.1371/journal.pone.0047419}.
+
+\bibitem[{Zhao and Jurafsky(2009)}]{Zhao:2009}
+Zhao, Yuan, and Dan Jurafsky. 2009.
+\newblock The effect of lexical frequency and {L}ombard reflex on tone
+  hyperarticulation.
+\newblock {\em Journal of Phonetics\/} 37:231--247.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0095447009000175}.
+
+\bibitem[{Zsiga and Nitisaroj(2007)}]{Zsiga:2007}
+Zsiga, Elizabeth, and Rattima Nitisaroj. 2007.
+\newblock Tone features, tone perception, and peak alignment in thai.
+\newblock {\em Language and Speech\/} 50:343--383.
+\newblock \urlprefix\url{http://las.sagepub.com/cgi/content/abstract/50/3/343}.
+
+\end{thebibliography}

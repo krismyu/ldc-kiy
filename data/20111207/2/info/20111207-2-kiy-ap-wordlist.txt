@@ -1,0 +1,18 @@
+29	tuu	MH	N	breast
+30	ta:o(:)	M.ML	N	stomach
+31	fɔ:u	M.ML	N	knee
+32	kruu	LM	N	body hair
+33	fije	M.L	N	skin
+34	kruu	ML	N	blood
+35	kII	HL	N	bone
+36	nDɔɔ	LM	N	flesh
+37	tii	ML	N	urine
+38	faa	ML	N	feces
+39	tiri:	M.^ML	N	person
+40	sare:	L.ML	N	friend
+41	tjaa Raj	MM ML	N	man
+42	ɛi koo	MH ML	N	older sister
+43	ɛi tjaa Raj	MH MM ML	N	older brother
+44	faa koo	LM ML	N	younger sister
+45	faa tjaa Raj	LM MM ML	N	younger brother
+46	aBoo	M.MM	N	grandfather

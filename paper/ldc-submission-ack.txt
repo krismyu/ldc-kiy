@@ -1,0 +1,113 @@
+Delivered-To: kristine.yu@gmail.com
+Received: by 10.205.81.208 with SMTP id zz16csp45203bkb;
+        Wed, 19 Jun 2013 23:30:54 -0700 (PDT)
+X-Received: by 10.58.15.193 with SMTP id z1mr2279575vec.40.1371709853959;
+        Wed, 19 Jun 2013 23:30:53 -0700 (PDT)
+Return-Path: <ldc@hawaii.edu>
+Received: from mailhub2.oit.umass.edu (mailhub2.oit.umass.edu. [128.119.103.54])
+        by mx.google.com with ESMTPS id zp6si7494248vdb.15.2013.06.19.23.30.53
+        for <kristine.yu@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Wed, 19 Jun 2013 23:30:53 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning ldc@hawaii.edu does not designate 128.119.103.54 as permitted sender) client-ip=128.119.103.54;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning ldc@hawaii.edu does not designate 128.119.103.54 as permitted sender) smtp.mail=ldc@hawaii.edu
+Received: from mailhub2.oit.umass.edu (localhost [127.0.0.1])
+	by localhost (Postfix) with SMTP id 124C82814ED
+	for <kristine.yu@gmail.com>; Thu, 20 Jun 2013 02:30:53 -0400 (EDT)
+Received: from mail-3.oit.umass.edu (mail-3.oit.umass.edu [128.119.100.6])
+	by mailhub2.oit.umass.edu (Postfix) with ESMTP id E9A762814BF
+	for <kristine.yu@gmail.com>; Thu, 20 Jun 2013 02:30:52 -0400 (EDT)
+Received: by mail-3.oit.umass.edu (Postfix, from userid 76)
+	id E8A40180E2; Thu, 20 Jun 2013 02:30:52 -0400 (EDT)
+Received: from mail-3.oit.umass.edu (localhost.localdomain [127.0.0.1])
+	 by mail-3.oit.umass.edu (Cyrus v2.3.7-Invoca-RPM-2.3.7-12.el5_7.2) with LMTPA;
+	 Thu, 20 Jun 2013 02:30:52 -0400
+X-Sieve: CMU Sieve 2.3
+Received: from race-6.oit.umass.edu (race-6.oit.umass.edu [128.119.2.117])
+	by mail-3.oit.umass.edu (Postfix) with ESMTP id CA120180C1
+	for <kmyu@mail-k.oit.umass.edu>; Thu, 20 Jun 2013 02:30:52 -0400 (EDT)
+Received: from race-6.oit.umass.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 250B5148190
+	for <kmyu@mail-k.oit.umass.edu>; Thu, 20 Jun 2013 02:30:48 -0400 (EDT)
+Received: from mail-pa0-f54.google.com (mail-pa0-f54.google.com [209.85.220.54])
+	(using TLSv1 with cipher RC4-SHA (128/128 bits))
+	(Client CN "smtp.gmail.com", Issuer "Google Internet Authority" (verified OK))
+	by race-6.oit.umass.edu (Postfix) with ESMTPS id A7A54148086
+	for <krisyu@linguist.umass.edu>; Thu, 20 Jun 2013 02:30:47 -0400 (EDT)
+Received: by mail-pa0-f54.google.com with SMTP id kx10so5972517pab.13
+        for <krisyu@linguist.umass.edu>; Wed, 19 Jun 2013 23:30:51 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=message-id:to:subject:content-type:x-mailer:x-originating-ip:date
+         :from:x-gm-message-state;
+        bh=U68ROAb/HBMH1OVuuSPfyk7hJmC6mTnnF2xPzsH18+o=;
+        b=EFQpE908uk6rUlzqOMu5Ac6X3O3XutbLA04hcNjVNNHcxN9Q7OQnWG1dNBnphPgOT5
+         5PrP9MYdCWGzVJwrdn/8czz+XUK0SiK1QY5PY9EmvziZyzPBsoPfptHxxYkYaxN58/4d
+         8EDFi9MjX7RnWCSMnuWhuIXvhcP66IJw+AxKIZDqgRa5FrTQPdmZpkwWIXQtK65ONi5M
+         DKrN7N2CS+lYTwcs5o9GO5gF2z+E4sJ9rupo5x9eP+qiq68vlyufuFnHFBD0wiIk4YmN
+         E9AGsYHH7jhOB+Qr1pBBrukeoR7rWm1cpbqq/dx8NH1yG8/Dmwmx+uH57UREmVKMgmJa
+         8Ktg==
+X-Received: by 10.68.36.197 with SMTP id s5mr6204607pbj.23.1371709851255;
+        Wed, 19 Jun 2013 23:30:51 -0700 (PDT)
+Received: from lll-server.hawaii.edu (www.lll.hawaii.edu. [128.171.128.99])
+        by mx.google.com with ESMTPSA id sd2sm12072481pbb.33.2013.06.19.23.30.49
+        for <multiple recipients>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Wed, 19 Jun 2013 23:30:49 -0700 (PDT)
+Message-ID: <17582_1371709853_51C2A19C_17582_3466_1_51c2a199.628f440a.5563.6e9d@mx.google.com>
+To: krisyu@linguist.umass.edu
+Subject: [LD&C] Submission Acknowledgement
+Content-Type: text/plain; charset="utf-8"
+X-Mailer: Public Knowledge Project Suite v2
+X-Originating-IP: 71.106.162.5
+Date: Wed, 19 Jun 2013 20:31:03 -1000
+From: "Language Documentation & Conservation" <ldc@hawaii.edu>
+X-Gm-Message-State: ALoCoQlC19/SzCelZ0CYRkXyiLSJ6V3Air9szreMYlXsZwnrAaQsLj+kjBtWv64H9coTB4yYvwsJ
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2013.6.20.61822
+X-PMX-Spam: Gauge=IIIIIIII, Probability=8%, Report='
+ HTML_00_01 0.05, HTML_00_10 0.05, BODYTEXTP_SIZE_3000_LESS 0, BODY_SIZE_1700_1799 0, BODY_SIZE_2000_LESS 0, BODY_SIZE_5000_LESS 0, BODY_SIZE_7000_LESS 0, FROM_EDU_TLD 0, FROM_NAME_PHRASE 0, WEBMAIL_SOURCE 0, WEBMAIL_XOIP 0, WEBMAIL_X_IP_HDR 0, __ANY_URI 0, __CP_URI_IN_BODY 0, __CT 0, __CT_TEXT_PLAIN 0, __HAS_FROM 0, __HAS_MSGID 0, __HAS_X_MAILER 0, __MIME_TEXT_ONLY 0, __PHISH_SPEAR_STRUCTURE_1 0, __SANE_MSGID 0, __TO_MALFORMED_2 0, __TO_NO_NAME 0, __URI_NO_MAILTO 0, __YOUTUBE_RCVD 0'
+X-PMX-Version: 6.0.0.2142326, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2013.6.20.61822
+
+Kristine Mak Yu:
+
+Thank you for submitting the manuscript, "The experimental state of mind in
+elicitation: illustrations from tonal fieldwork" to Language Documentation &
+Conservation. If your manuscript is a book review it wil be edited by our
+Book Reviews Editor. If it is a technology review it will be edited by our
+Technology Reviews Editor.
+
+If your manuscript is to be reviewed it will be processed as follows:
+ 
+1. Internal Review: The editors will review your manuscript to determine if
+it is suitable for LD&C. This step normally takes approximately one to three
+weeks.
+ 
+2. External Review: If your manuscript is suitable for LD&C, it will be sent
+to two external reviewers. This step typically takes from one to two months,
+depending upon the schedules of the reviewers.
+ 
+3. Decision: After receiving comments from the reviewers, the Editors will
+make a decision as to whether your submission is (1) Accepted, (2) Accepted
+with revisions, (3) Rejected, with a recommendation to revise and resubmit,
+or (4) Rejected.
+ 
+With the online journal management system that we are using, you will be
+able to track its progress through the editorial process by logging in to
+the journal web site:
+
+Manuscript URL:
+http://www.lll.hawaii.edu/ojs/index.php/ldc/author/submission/86
+Username: krisyu
+
+If you have any questions, please contact me. Thank you for considering LD&C
+as a venue for your work.
+
+Nick Thieberger
+Editor
+Language Documentation & Conservation Journal
+http://www.nflrc.hawaii.edu/ldc/
+________________________________________________________________________
+Language Documentation & Conservation
+http://www.lll.hawaii.edu/ojs/index.php/ldc
+Google Analytics

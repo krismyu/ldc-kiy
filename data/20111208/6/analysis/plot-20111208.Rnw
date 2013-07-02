@@ -1,0 +1,248 @@
+%Time-stamp: <2013-06-18 20:31:07 amoebe>
+\documentclass{article}
+\usepackage{natbib}
+%\usepackage{fullpage}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable} % For splitting tables over pages
+\usepackage{Sweave}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{timestamp}
+%\usepackage[section] {placeins} % http://www.douglasvanbossuyt.com/2008/11/18/la%\SweaveOpts{keep.source=TRUE} % don't remove source code comments
+\SweaveOpts{prefix.string=figs/kiy-20111208} % save auto-generated figures in
+                                % figs/, prefixed by cant-f0creak-
+
+\setlength{\bibsep}{0.0pt}
+\setlength{\headheight}{15.2pt}
+\setlength{\headsep}{12pt}
+\pagestyle{fancyplain}
+\fancyhf{}
+
+\lhead{Kristine M. Yu}
+\rhead{ldc-kiy plots for Example 2.2.1 in paper from 20111208, \timestamp}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\begin{document}
+  
+<<label = setup, echo = FALSE>>=
+
+# Load ggplot2 plotting library
+library(ggplot2)
+
+# Read in f0 extraction data from RAPT
+rapt.dat <- read.table('espsData.txt', header = FALSE, col.names = c("fname", "time", "f0", "prob.voi", "rms", "ac.peak"))
+
+# Remove rows where f0 undefined (voicing detection p.voi = 0) and f0 > 300 or f0 < 100
+rapt.dat1 = rapt.dat[rapt.dat$prob.voi != 0 & rapt.dat$f0 < 300 & rapt.dat$f0 > 100,]
+
+# Add in item info
+
+# Extract item numbers from filename 'fname'
+
+#### Split filenames and assign item labels
+
+fname.info <- strsplit(as.character(rapt.dat1$fname), "-") # split filename by hyphens
+
+item <- sapply(fname.info, "[", 7)  # item
+               
+rapt.dat1$item <- sapply(item, function (x) sub('.f0', '', x))
+
+#### Merge in hash table info 
+
+# Read in hash table text files
+info <- read.table('../info/20111208-6-kiy-ap-nps-vps-hash.txt', sep = '\t', header = TRUE)
+info$len.syll <- as.factor(info$len.syll)
+
+# Merge in hash table info
+rapt.dat1 <- merge(rapt.dat1, info, by.x = "item", by.y = "item") 
+
+# Subset out just non-adj frames
+
+rapt.dat1.nadj <- rapt.dat1[!rapt.dat1$frame %in% c("adj-black", "adj-female", "adj-large", "adj-small"),]                        
+rapt.dat1.nadj$frame <- rapt.dat1.nadj$frame[drop = TRUE]
+
+@ 
+
+
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-unexplained, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.mess <- ggplot(rapt.dat1, aes(x = time, y = f0, group = fname)) + geom_line(size = 1) + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.mess)
+
+@ 
+\caption{f0 contours from all recorded elicitation items from
+    \textsc{20111208-6-kiy-ap-nps-vps}.}
+  \label{fig:plot-mess}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-iso, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.iso <- ggplot(data = subset(rapt.dat1, frame != "iso"), aes(x = time, y = f0, group = fname)) + geom_line(size = 1, color = "grey46", linetype = "dashed") + geom_line(data = subset(rapt.dat1, frame == "iso"), size = 1.5)
+
+plot.iso.annot <- plot.iso + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.iso.annot)
+
+@ 
+\caption{f0 contours from all recorded elicitation items from
+    \textsc{20111208-6-kiy-ap-nps-vps}.}
+  \label{fig:plot-iso}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-target, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.target <- ggplot(data = rapt.dat1, aes(x = time, y = f0, group = fname, color = frame)) + geom_line(size = 1) + facet_wrap(~ target)
+
+plot.target.annot <- plot.target + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.target.annot)
+
+@ 
+\caption{f0 contours from all recorded elicitation items from
+  \textsc{20111208-6-kiy-ap-nps-vps}, faceted by target and
+  color-coded within the target facets by frame. foo and kee appear
+  to have the most tokens. Across frames, pitch contours for target
+  words look pretty similar.}
+  \label{fig:plot-target}
+\end{figure}
+
+\clearpage
+
+Let's try looking at just foo, kee, kaza, parai, nabij, siji
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-targets-niso, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+rapt.dat1.targets <- rapt.dat1[rapt.dat1$target %in% c("foo", "kee", "kaza", "parai", "nabij", "siji"),]
+
+rapt.dat1.targets$target <- rapt.dat1.targets$target[drop=TRUE]
+
+rapt.dat1.targets.niso <- subset(rapt.dat1.targets, frame != "iso")
+rapt.dat1.targets.niso$frame <- rapt.dat1.targets.niso$frame[drop=TRUE]
+
+rapt.dat1.targets.niso$target <- factor(rapt.dat1.targets.niso$target, levels = c("foo", "kee", "kaza", "nabij", "parai", "siji"))
+
+plot.target.niso.sub <- ggplot(data = subset(rapt.dat1.targets.niso), aes(x = time, y = f0, group = fname, linetype = frame, color = frame)) + geom_line(size = 1) + scale_linetype_manual(values = c(rep("dotted", 4), rep("solid", 2))) + facet_wrap(~ target) + scale_x_continuous(breaks = round(seq(min(rapt.dat1.targets.niso$time), max(rapt.dat1.targets.niso$time), by = 0.1),1))
+
+plot.target.niso.sub.annot <- plot.target.niso.sub + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.target.niso.sub.annot)
+
+@ 
+
+\caption{f0 contours for just foo, kaza, kee, nabij, parai, siji, no
+  isolation frame. Color by frame.}
+  \label{fig:plot-targets-niso}
+\end{figure}
+
+\clearpage
+
+Compare this to if you don't do a facet plot:
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-targets-niso-mess, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.target.niso.sub.mess <- ggplot(data = subset(rapt.dat1.targets.niso), aes(x = time, y = f0, group = fname, linetype = frame, color = frame)) + geom_line(size = 1) + scale_linetype_manual(values = c(rep("dotted", 4), rep("solid", 2))) + scale_x_continuous(breaks = round(seq(min(rapt.dat1.targets.niso$time), max(rapt.dat1.targets.niso$time), by = 0.1),1))
+
+plot.target.niso.sub.mess.annot <- plot.target.niso.sub.mess + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"),legend.position = c(0.85,0.8), legend.title = theme_text(size = 12, hjust = 0, face = "bold"), legend.text = theme_text(size = 11, vjust = 0.5))
+
+print(plot.target.niso.sub.mess.annot)
+
+@ 
+
+\caption{f0 contours for just foo, kaza, kee, nabij, parai, siji, no
+  isolation frame. Not faceted.}
+  \label{fig:plot-targets-niso-mess}
+\end{figure}
+
+\clearpage
+
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-frame, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.frame <- ggplot(data = rapt.dat1, aes(x = time, y = f0, group = fname, color = target)) + geom_line(size = 1) + facet_wrap(~ frame)
+
+plot.frame.annot <- plot.frame + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.frame.annot)
+
+@ 
+
+\caption{f0 contours from all recorded elicitation items from
+  \textsc{20111208-6-kiy-ap-nps-vps}, faceted by frame and
+  color-coded within the target facets by target. Iso and vp-sound
+  show big messes.}
+  \label{fig:plot-frame}
+\end{figure}
+
+\clearpage
+
+Let's work with only the non-adjective frames since they only have two
+substitution items each.
+
+Let's subset by syllable number and frame, lex.class.
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-iso-syll-lex, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.iso.syll.lex <- ggplot(data = subset(rapt.dat1.nadj, lex.class == "n" & frame == "iso"), aes(x = time, y = f0, group = fname, color = len.syll)) + geom_line(size = 1)
+
+plot.iso.syll.lex.annot <- plot.iso.syll.lex + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.iso.syll.lex.annot)
+
+@ 
+
+\caption{f0 contours from all recorded elicitation items from
+  \textsc{20111208-6-kiy-ap-nps-vps} in the isolation context, color
+  coded by number of syllables}
+  \label{fig:plot-iso-lex}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-niso-syll-lex, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.niso.syll.lex <- ggplot(data = subset(rapt.dat1.nadj, lex.class == "n" & frame != "iso"), aes(x = time, y = f0, group = fname, color = len.syll)) + geom_line(size = 1) + facet_wrap(~ frame, nrow = 1)
+
+plot.niso.syll.lex.annot <- plot.niso.syll.lex + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray89"))
+
+print(plot.niso.syll.lex.annot)
+
+@ 
+
+\caption{f0 contours for vp frames, faceted by frame and color coded
+  by number of syllables.}
+  \label{fig:plot-niso-syll-lex}
+\end{figure}
+
+
+\end{document}

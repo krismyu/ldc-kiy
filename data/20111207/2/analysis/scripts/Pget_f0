@@ -1,0 +1,4 @@
+## filename: Pget_f0
+
+float min_f0 = 60.0 ;
+float max_f0 = 350.00 ;

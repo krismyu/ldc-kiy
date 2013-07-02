@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: kiy.aux
+The style file: linquiry3.bst
+Database file #1: kiy.bib
+Warning--entry type for "Jaeger:2014" isn't style-file defined
+--line 1882 of file kiy.bib
+Warning--empty publisher in Plato:360
+You've used 101 entries,
+            2697 wiz_defined-function locations,
+            1286 strings with 20869 characters,
+and the built_in function-call counts, 47058 in all, are:
+= -- 4708
+> -- 1877
+< -- 89
++ -- 684
+- -- 538
+* -- 3574
+:= -- 8425
+add.period$ -- 446
+call.type$ -- 101
+change.case$ -- 725
+chr.to.int$ -- 100
+cite$ -- 102
+duplicate$ -- 2057
+empty$ -- 3565
+format.name$ -- 786
+if$ -- 9520
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 117
+newline$ -- 539
+num.names$ -- 424
+pop$ -- 635
+preamble$ -- 1
+purify$ -- 575
+quote$ -- 0
+skip$ -- 1469
+stack$ -- 0
+substring$ -- 2963
+swap$ -- 335
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 846
+warning$ -- 1
+while$ -- 471
+width$ -- 0
+write$ -- 1376
+(There were 2 warnings)

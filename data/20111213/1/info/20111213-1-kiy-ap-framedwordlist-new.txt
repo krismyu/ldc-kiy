@@ -1,0 +1,26 @@
+item	kirikiri	gloss	Ttone1	Ttone2	frame	word1	word2
+1	paRai giRu	bandicoot's elbow	T1	T1	11	paRai	giRu
+2	kaza giRu	gecko's elbow	T2	T1	21	kaza	giRu
+3	fivaa giRu	snail's elbow	T3	T1	31	fivaa	giRu
+4	naraa giRu	wasp's elbow	T4	T1	41	naraa	giRu
+5	tava giRu	catfish's elbow	T5	T1	51	tava	giRu
+6	paRai ora	bandicoot's tongue	T1	T2	12	paRai	ora
+7	kaza ora	gecko's tongue	T2	T2	22	kaza	ora
+8	fivaa ora	snail's tongue	T3	T2	32	fivaa	ora
+9	naraa ora	wasp's tongue	T4	T2	42	naraa	ora
+10	tava ora	catfish's tongue	T5	T2	52	tava	ora
+11	paRai faRo	bandicoot's groin	T1	T3	13	paRai	faRo
+12	kaza faRo	gecko's groin	T2	T3	23	kaza	faRo
+13	fivaa faRo	snail's groin	T3	T3	33	fivaa	faRo
+14	naraa faRo	wasp's groin	T4	T3	43	naraa	faRo
+15	tava faRo	catfish's groin	T5	T3	53	tava	faRo
+16	paRai kwawaa	bandicoot's chin	T1	T4	14	paRai	kwawaa
+17	kaza kwawaa	gecko's chin	T2	T4	24	kaza	kwawaa
+18	fivaa kwawaa	snail's chin	T3	T4	34	fivaa	kwawaa
+19	naraa kwawaa	wasp's chin	T4	T4	44	naraa	kwawaa
+20	tava kwawaa	catfish's chin	T5	T4	54	tava	kwawaa
+21	paRai koRee	bandicoot's string	T1	T5	15	paRai	koRee
+22	kaza koRee	gecko's string	T2	T5	25	kaza	koRee
+23	fivaa koRee	snail's string	T3	T5	35	fivaa	koRee
+24	naraa koRee	wasp's string	T4	T5	45	naraa	koRee
+25	tava koRee	catfish's string	T5	T5	55	tava	koRee

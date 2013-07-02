@@ -1,0 +1,32 @@
+Time-stamp: <2013-05-09 23:56:43 amoebe>
+
+* GENERAL
+- All listed paths relative to /Users/amoebe/fkiy/ldc-kiy/kiy/20111216/2
+- Note that 20111215-2-kiy-ap-framedwordlist-3.pdf and
+  20111215-2-kiy-ap-framedwordlist-4.pdf were the stimulus sets used
+  to elicit 20111216-2-kiy-ap-framedwordlist1.wav and
+  20111216-2-kiy-ap-framedwordlist2.wav, respectively
+- Here's a table showing the breakdown of the set of stimuli:
+  | WAV FILE                          | ITEMS       | PDF                                    |
+  |-----------------------------------+-------------+----------------------------------------|
+  | 20111215-2-kiy-ap-framedwordlist1 | 1st-50th    | 20111215-2-kiy-ap-framedwordlist-1.pdf |
+  | 20111215-2-kiy-ap-framedwordlist2 | 51st-100th  | 20111215-2-kiy-ap-framedwordlist-2.pdf |
+  | 20111216-2-kiy-ap-framedwordlist1 | 101nd-150th | 20111215-2-kiy-ap-framedwordlist-3.pdf |
+  | 20111216-2-kiy-ap-framedwordlist2 | 151nd-200th | 20111215-2-kiy-ap-framedwordlist-4.pdf |
+  
+* [2013-05-09 Thu]
+** Reorganization of directory
+- [X] Added sub-directories data/, info/, scripts/, analysis/
+- [X] Copied in relevant 20111215/2/info files to info/ directory
+** Processed raw sound files
+- [X] Extracted Ch 1 (Speaker's channel) from raw stereo wav files, see
+  CODE SNIPPET 0 in 20111216-2-kiy-ap-framedwordlist.sh
+** Labeled sound files
+- [X] Coded up CODE SNIPPET 1 in 20111216-2-kiy-ap-framedwordlist.sh to
+  prepare labels for intervals in TextGrid files
+- [X] Ran scripts/label_from_text_file2-1.praat  and
+  scripts/label_from_text_file2-2.praat to label item/rep codes
+- [X] Ran scripts/save_labeled_intervals_to_wav_sound_files-1.praat
+  and scripts/save_labeled_intervals_to_wav_sound_files-2.praat to
+  save individual wav files for each repetition of each item in analysis/tokens/
+** 

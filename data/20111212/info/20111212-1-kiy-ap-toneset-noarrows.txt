@@ -1,0 +1,118 @@
+item	gloss	kirikiri	tone-iso	tone-one	syllables	category	frame
+1	blood	kru	31	33	1	1	iso
+2	feces	fa	31	33	1	1	iso
+3	fart	fu	31	33	1	1	iso
+4	ridgebeam	fU	31	33	1	1	iso
+5	eat! (V)	ta	31	33	1	1	iso
+6	picture	se	31	33	1	1	iso
+7	blood	kru	31	33	1	1	one-L
+8	feces	fa	31	33	1	1	one-L
+9	fart	fu	31	33	1	1	one-L
+10	ridgebeam	fU	31	33	1	1	one-L
+11	picture	se	31	33	1	1	one-L
+12	fingernail	fɔ	23	24	1	2	iso
+13	woodchips	krU	23	24	1	2	iso
+14	buttocks	fo	23	24	1	2	iso
+15	younger sibling	fa	23	24	1	2	iso
+16	body hair	krU	23	24	1	2	iso
+17	head	ta	23	24	1	2	iso
+18	meat	nɔ	23	24	1	2	iso
+19	fingernail	fɔ	23	24	1	2	one-L
+20	woodchips	krU	23	24	1	2	one-L
+21	buttocks	fo	23	24	1	2	one-L
+22	younger sibling	fa	23	24	1	2	one-L
+23	body hair	krU	23	24	1	2	one-L
+24	head	ta	23	24	1	2	one-L
+25	meat	nɔ	23	24	1	2	one-L
+26	fingernail	fɔ	23	24	1	2	2plposs-H
+27	woodchips	krU	23	24	1	2	2plposs-H
+28	buttocks	fo	23	24	1	2	2plposs-H
+29	younger sibling	fa	23	24	1	2	2plposs-H
+30	body hair	krU	23	24	1	2	2plposs-H
+31	head	ta	23	24	1	2	2plposs-H
+32	meat	nɔ	23	24	1	2	2plposs-H
+33	blood	kru	31	33	1	1	2plposs-H
+34	feces	fa	31	33	1	1	2plposs-H
+35	fart	fu	31	33	1	1	2plposs-H
+36	ridgebeam	fU	31	33	1	1	2plposs-H
+37	picture	se	31	33	1	1	2plposs-H
+38	wallaby	fɔ	42	42	1	3	iso
+39	name	kwa	42	42	1	3	iso
+40	thigh	fa	42	42	1	3	iso
+41	navel	fu	42	42	1	3	iso
+42	child (address term)	fo	42	42	1	3	iso
+43	honeybee	fɔ	42	42	1	3	iso
+44	wallaby	fɔ	42	42	1	3	one-L
+45	name	kwa	42	42	1	3	one-L
+46	thigh	fa	42	42	1	3	one-L
+47	navel	fu	42	42	1	3	one-L
+48	child (address term)	fo	42	42	1	3	one-L
+49	honeybee	fɔ	42	42	1	3	one-L
+50	wallaby	fɔ	42	42	1	3	2plposs-H
+51	name	kwa	42	42	1	3	2plposs-H
+52	thigh	fa	42	42	1	3	2plposs-H
+53	navel	fu	42	42	1	3	2plposs-H
+54	child (address term)	fo	42	42	1	3	2plposs-H
+55	honeybee	fɔ	42	42	1	3	2plposs-H
+56	grass	fɔ	44	24	1	5	iso
+57	house	kwa	44	24	1	5	iso
+58	sago grub	fa	44	24	1	5	iso
+59	place	ta	44	24	1	5	iso
+60	sun, moon	tɔ	44	24	1	5	iso
+61	grass	fɔ	44	24	1	5	one-L
+62	house	kwa	44	24	1	5	one-L
+63	sago grub	fa	44	24	1	5	one-L
+64	place	ta	44	24	1	5	one-L
+65	sun, moon	tɔ	44	24	1	5	one-L
+66	grass	fɔ	44	24	1	5	2plposs-H
+67	house	kwa	44	24	1	5	2plposs-H
+68	sago grub	fa	44	24	1	5	2plposs-H
+69	place	ta	44	24	1	5	2plposs-H
+70	sun, moon	tɔ	44	24	1	5	2plposs-H
+71	bark (for thread)	miitari	31	33	3	1	iso
+72	foam	nawataa	31	33	3	1	iso
+73	Dani people	wavisaa	31	33	3	1	iso
+74	lizard	terevaa	31	33	3	1	iso
+75	mug	mooRəro	31	33	3	1	iso
+76	bark (for thread)	miitari	31	33	3	1	one-L
+77	foam	nawataa	31	33	3	1	one-L
+78	Dani people	wavisaa	31	33	3	1	one-L
+79	lizard	terevaa	31	33	3	1	one-L
+80	mug	mooRəro	31	33	3	1	one-L
+81	bark (for thread)	miitari	31	33	3	1	2plposs-H
+82	foam	nawataa	31	33	3	1	2plposs-H
+83	Dani people	wavisaa	31	33	3	1	2plposs-H
+84	lizard	terevaa	31	33	3	1	2plposs-H
+85	mug	mooRəro	31	33	3	1	2plposs-H
+86	edge	uraga	42	42	3	3	iso
+87	cooking pot (lw)	belaŋa	42	42	3	3	iso
+88	butterfly	owafi	42	42	3	3	iso
+89	orchid	orUsa	42	42	3	3	iso
+90	edge	uraga	42	42	3	3	one-L
+91	cooking pot (lw)	belaŋa	42	42	3	3	one-L
+92	butterfly	owafi	42	42	3	3	one-L
+93	orchid	orUsa	42	42	3	3	one-L
+94	edge	uraga	42	42	3	3	2plposs-H
+95	cooking pot (lw)	belaŋa	42	42	3	3	2plposs-H
+96	butterfly	owafi	42	42	3	3	2plposs-H
+97	orchid	orUsa	42	42	3	3	2plposs-H
+98	bachelor	modukri	12.31	24	3	4	iso
+99	bachelor	modukri	12.31	24	3	4	one-L
+100	bachelor	modukri	12.31	24	3	4	2plposs-H
+101	pig	sie	31	33	2	1	2plposs-H
+102	hymn	Rwiya	31	33	2	1	iso
+103	hymn	Rwiya	31	33	2	1	2plposs-H
+104	bandicoot	paRai	31	33	2	1	2plposs-H
+105	bat	torii	31	33	2	1	2plposs-H
+106	dog	nabii	23	24	2	2	2plposs-H
+107	gecko	kaza	23	24	2	2	2plposs-H
+108	breadfruit	merii	23	24	2	2	2plposs-H
+109	snail	fivaa	42	42	2	3	2plposs-H
+110	sago bark	tavoo	42	42	2	3	2plposs-H
+111	star	fɔrɔɔ	42	42	2	3	2plposs-H
+112	fishnet	faare	12.31	24	2	4	2plposs-H
+113	shoulder blade	novii	12.31	24	2	4	2plposs-H
+114	taro	kekee	12.31	24	2	4	2plposs-H
+115	fish arrow	foro	44	24	2	5	2plposs-H
+116	night	krakaw	44	24	2	5	2plposs-H
+117	sting	koree	44	24	2	5	2plposs-H

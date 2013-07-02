@@ -1,0 +1,5 @@
+\standalonepreambles
+\subpreamble{pike-tikz.tex}
+\usepackage {tikz}\usetikzlibrary {arrows,fit,calc,decorations.markings}\tikzstyle {container} = [draw, very thick, dashed, rectangle, roundedcorners, inner sep=2.5em, fill = yellow!20 ]
+\endsubpreamble
+\endstandalonepreambles

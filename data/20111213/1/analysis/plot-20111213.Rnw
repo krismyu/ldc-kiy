@@ -1,0 +1,250 @@
+%Time-stamp: <2013-06-19 13:04:27 amoebe>
+\documentclass{article}
+\usepackage{natbib}
+%\usepackage{fullpage}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable} % For splitting tables over pages
+\usepackage{Sweave}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{timestamp}
+%\usepackage[section] {placeins} % http://www.douglasvanbossuyt.com/2008/11/18/la%\SweaveOpts{keep.source=TRUE} % don't remove source code comments
+\SweaveOpts{prefix.string=figs/kiy-20111213} % save auto-generated figures in
+                                % figs/, prefixed by cant-f0creak-
+
+\setlength{\bibsep}{0.0pt}
+\setlength{\headheight}{15.2pt}
+\setlength{\headsep}{12pt}
+\pagestyle{fancyplain}
+\fancyhf{}
+
+\lhead{Kristine M. Yu}
+\rhead{ldc-kiy plots for Example 2.3.3 in paper from 20111213, \timestamp}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+I added prefixes of T to the tone labels in the hash table using the following:
+
+\begin{verbatim}
+awk -F '\t' -v OFS='\t' '{$4="T"$4} {$5="T"$5} {print}' 20111213-1-kiy-ap-framedwordlist.txt > 20111213-1-kiy-ap-framedwordlist-new.txt 
+\end{verbatim}
+
+<<label = setup, echo = FALSE>>=
+
+# Load ggplot2 plotting library and reshape
+library(ggplot2)
+library(reshape)
+
+# Read in f0 extraction data from RAPT
+rapt.dat <- read.table('espsData.txt', header = FALSE, col.names = c("fname", "time", "f0", "prob.voi", "rms", "ac.peak"))
+
+# Remove rows where f0 undefined (voicing detection p.voi = 0) and f0 > 300 or f0 < 100
+rapt.dat1 = rapt.dat[rapt.dat$prob.voi != 0 & rapt.dat$f0 < 300 & rapt.dat$f0 > 100,]
+
+# Add in item info
+
+# Extract item numbers from filename 'fname'
+
+#### Split filenames and assign item labels
+
+fname.info <- strsplit(as.character(rapt.dat1$fname), "-") # split filename by hyphens
+
+item <- sapply(fname.info, "[", 6)  # item
+               
+rapt.dat1$item <- sapply(item, function (x) sub('.f0', '', x))
+
+rapt.dat1$filename <- sapply(rapt.dat1$fname, function (x) sub('.f0', '', x))
+
+
+#### Merge in hash table info 
+
+# Read in hash table text files
+hash.kiy <- read.table('../info/20111213-1-kiy-ap-framedwordlist-new.txt', sep = '\t', header = TRUE, quote="\"")
+names(hash.kiy)[names(hash.kiy) == "Ttone1"] = "W1"
+names(hash.kiy)[names(hash.kiy) == "Ttone2"] = "W2"
+
+## # Merge in hash table info
+## rapt.dat1 <- merge(rapt.dat1, info, by.x = "item", by.y = "item") 
+## names(rapt.dat1)[names(rapt.dat1) == "tone1"] = "W1"
+## names(rapt.dat1)[names(rapt.dat1) == "tone2"] = "W2"
+
+
+
+@ 
+
+<<label = setup-stamps, echo = FALSE>>=
+
+word.stamps <- read.table(file = "word-timestamps.txt", sep = "\t", header = TRUE)
+stamp.fname.info <- strsplit(as.character(word.stamps$filename), "-") # split filename by hyphens
+item.tmp <- sapply(stamp.fname.info, "[", 6)  # item
+word.stamps$item <- sapply(item.tmp, function (x) sub('.TextGrid', '', x))
+
+kiy.stamps <- merge(word.stamps, hash.kiy[,c("item","W1", "W2")], by.x = "item", by.y = "item")
+
+kiy.stamps$fname <- sapply(kiy.stamps$filename, function (x) sub('.TextGrid', '', x))
+
+
+extract.samples <- function(nsamps,dat) {
+
+  w1.start <- as.vector(apply(dat, 1, function(d) unlist(lapply(0:(nsamps-1), function(count) as.numeric(d["w1.start"]) + count * (as.numeric(d["w1.end"]) - as.numeric(d["w1.start"]))/nsamps))))
+  w1.end <- as.vector(apply(dat, 1, function(d) unlist(lapply(1:nsamps, function(count) as.numeric(d["w1.start"]) + count * (as.numeric(d["w1.end"]) - as.numeric(d["w1.start"]))/nsamps))))
+
+  w2.start <- as.vector(apply(dat, 1, function(d) unlist(lapply(0:(nsamps-1), function(count) as.numeric(d["w2.start"]) + count * (as.numeric(d["w2.end"]) - as.numeric(d["w2.start"]))/nsamps))))
+  w2.end <- as.vector(apply(dat, 1, function(d) unlist(lapply(1:nsamps, function(count) as.numeric(d["w2.start"]) + count * (as.numeric(d["w2.end"]) - as.numeric(d["w2.start"]))/nsamps))))
+
+  samps.filename <- dat$fname[rep(1:length(dat$fname), rep(nsamps,length(dat$fname)))]
+  samps.W1 <- dat$W1[rep(1:length(dat$W1), rep(nsamps,length(dat$W1)))]
+  samps.W2 <- dat$W2[rep(1:length(dat$W2), rep(nsamps,length(dat$W2)))]
+  samps.sample <- rep(1:nsamps, nrow(dat))
+
+   stamps.samps.dat <- data.frame(filename = samps.filename,sample = samps.sample, W1 = samps.W1, W2 = samps.W2, w1.start = w1.start, w1.end = w1.end, w2.start = w2.start, w2.end = w2.end)
+  
+   return(stamps.samps.dat)
+ }
+
+kiy.stamps.all <- extract.samples(30, kiy.stamps)
+
+## # Now we average over the RAPT extracted f0 values that are within the bounds of the slices, and sample nsamps times over each slice
+
+extract.rapt.mean.f0.samp <- function(d,dat.f0.values) {
+
+# Calculate mean f0 for each samp over the f0 values from esps.dat which have a timestamp greater or equal to the timestamp for the start of the samp and less or equal to the timestamp for the end of the samp and belong to the file the samp comes from. Ignore missing values.
+
+# f0 values to consider
+
+mean.f0.samp.w1 <- mean(dat.f0.values$f0[which(dat.f0.values$time >= d["w1.start"] & dat.f0.values$time <= d["w1.end"] & dat.f0.values$filename == d["filename"])], na.rm = TRUE)
+
+mean.f0.samp.w2 <- mean(dat.f0.values$f0[which(dat.f0.values$time >= d["w2.start"] & dat.f0.values$time <= d["w2.end"] & dat.f0.values$filename == d["filename"])], na.rm = TRUE)
+
+mean.f0.samp <- data.frame(mean.f0.samp.w1, mean.f0.samp.w2)
+
+return(mean.f0.samp) # return mean f0
+}
+
+# Calculate mean f0s for each samp and merge with ts, create new data frame f-.rapt.samps
+
+f0.samps <- apply(kiy.stamps.all, 1,extract.rapt.mean.f0.samp, rapt.dat1)
+
+kiy.stamps.all$f0.w1 <- sapply(f0.samps, "[[", 1)
+kiy.stamps.all$f0.w2 <- sapply(f0.samps, "[[", 2)
+
+
+# Merge in time stamps
+
+
+cast.f0 <- function(dat) {
+  blick <- melt(dat, id.vars = c("filename", "sample", "W1", "W2"), measure.vars = c("f0.w1", "f0.w2"))
+  blick$tone <- with(blick,ifelse(variable == "f0.w1", as.character(W1), as.character(W2)))
+  blick$label <- with(blick, paste(variable, ".", sample, sep = ""))
+  blick$sample <- paste("f0.", blick$sample, sep = "")
+blick2 <- cast(blick, filename + tone + variable  ~ sample)
+  return(blick2)  
+}
+
+kiy.cast <- cast.f0(kiy.stamps.all)
+
+@ 
+\begin{figure}[h]
+  \centering
+
+<<label = plot-all-by-tone, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+print(ggplot(kiy.stamps.all, aes(x = sample, y = f0.w1, group = filename, color = W1)) + geom_line(aes(linetype = W1)) + geom_point() + theme_bw() + geom_line(aes(y = f0.w2, color = W2, linetype = W2)) + geom_point(aes(y = f0.w2, color = W2)) + scale_color_manual(name = "tone", values = c("darkorange", "royalblue", "firebrick", "darkgreen", "purple")) + scale_y_continuous(name = "f0 (Hz)") + scale_linetype(name = "tone") + theme(axis.text.x = element_text(size=10,vjust=1), axis.text.y = element_text(size=10,hjust=1), axis.title.x = element_text(size = 14, vjust=0.5,), axis.title.y = element_text(size = 14, angle=90, vjust=0.4, hjust=0.5), legend.position = "bottom", legend.title = element_text(size = 12, hjust = 0, face = "bold"), legend.text = element_text(size = 11, vjust = 0.5)) + labs(y = "f0 (Hz)", x = "Samples"))
+
+<<>>=
+@ 
+@ 
+
+\caption{All tones on top of one another.}
+  \label{fig:plot-all-by-tone}
+\end{figure}
+
+\clearpage
+
+
+\begin{figure}[h]
+  \centering
+
+<<label = plot-w1, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.w1 <- ggplot(kiy.stamps.all, aes(x = sample, y = f0.w1, group = filename, color = W1, shape = W1)) + geom_line() + geom_point() + theme_bw() + scale_color_manual(name = "tone", values = c("darkorange", "royalblue", "firebrick", "darkgreen", "palevioletred4")) + scale_shape_manual(name = "tone", values = c(16, 17, 15, 3, 8)) + scale_y_continuous(limits = c(100, 260))
+
+plot.w1.annot <- plot.w1 + theme(axis.text.x = element_text(size=10,vjust=1), axis.text.y = element_text(size=10,hjust=1), axis.title.x = element_text(size = 14, vjust=0.5,), axis.title.y = element_text(size = 14, angle=90, vjust=0.4, hjust=0.5), legend.position = "bottom", legend.title = element_text(size = 12, hjust = 0, face = "bold"), legend.text = element_text(size = 11, vjust = 0.5)) + labs(y = "f0 (Hz)", x = "Samples")
+
+print(plot.w1.annot)
+      
+@ 
+
+\caption{All tones for word 1}
+  \label{fig:plot-w1}
+\end{figure}
+
+\clearpage
+
+
+\begin{figure}[h]
+  \centering
+
+<<label = plot-w2, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.w2 <- ggplot(kiy.stamps.all, aes(x = sample, y = f0.w2, group = filename, color = W2, shape = W1)) + geom_line() + geom_point() + theme_bw() + scale_color_manual(name = "tone", values = c("darkorange", "royalblue", "firebrick", "darkgreen", "palevioletred4")) + scale_shape_manual(name = "tone", values = c(16, 17, 15, 3, 8)) + scale_y_continuous(limits = c(100, 260))
+
+plot.w2.annot <- plot.w2 + theme(axis.text.x = element_text(size=10,vjust=1), axis.text.y = element_text(size=10,hjust=1), axis.title.x = element_text(size = 14, vjust=0.5,), axis.title.y = element_text(size = 14, angle=90, vjust=0.4, hjust=0.5), legend.position = "bottom", legend.title = element_text(size = 12, hjust = 0, face = "bold"), legend.text = element_text(size = 11, vjust = 0.5)) + labs(y = "f0 (Hz)", x = "Samples")
+
+print(plot.w2.annot)
+
+@ 
+
+\caption{All tones for word 2}
+  \label{fig:plot-w2}
+\end{figure}
+
+\clearpage
+
+
+\begin{figure}
+  \centering
+
+<<label = plot-w1-facet, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.w1.facet <- ggplot(kiy.stamps.all, aes(x = sample, y = f0.w1, group = filename)) + geom_line(color = "black") + geom_point(color = "black", shape = 16) + theme_bw() + scale_shape_manual(name = "tone", values = c(16, 17, 15, 3, 8)) + scale_y_continuous(limits = c(100, 260)) + facet_wrap(~W1) 
+
+plot.w1.facet.annot <- plot.w1.facet + theme(axis.text.x = element_text(size=10,vjust=1), axis.text.y = element_text(size=10,hjust=1), axis.title.x = element_text(size = 14, vjust=0.5,), axis.title.y = element_text(size = 14, angle=90, vjust=0.4, hjust=0.5), legend.position = "bottom", legend.title = element_text(size = 12, hjust = 0, face = "bold"), legend.text = element_text(size = 11, vjust = 0.5)) + labs(y = "f0 (Hz)", x = "Samples")
+
+print(plot.w1.facet.annot)
+
+
+@ 
+
+\caption{All tones for word 1, faceted}
+  \label{fig:plot-w1}
+\end{figure}
+
+\clearpage
+
+
+\begin{figure}
+  \centering
+<<label = plot-w2-facet, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.w2.facet <- ggplot(kiy.stamps.all, aes(x = sample, y = f0.w2, group = filename)) + geom_line(color = "black") + geom_point(color = "black", shape = 16) + theme_bw() + scale_shape_manual(name = "tone", values = c(16, 17, 15, 3, 8)) + scale_y_continuous(limits = c(100, 260)) + facet_wrap(~W2) 
+
+plot.w2.facet.annot <- plot.w2.facet + theme(axis.text.x = element_text(size=10,vjust=1), axis.text.y = element_text(size=10,hjust=1), axis.title.x = element_text(size = 14, vjust=0.5,), axis.title.y = element_text(size = 14, angle=90, vjust=0.4, hjust=0.5), legend.position = "bottom", legend.title = element_text(size = 12, hjust = 0, face = "bold"), legend.text = element_text(size = 11, vjust = 0.5)) + labs(y = "f0 (Hz)", x = "Samples")
+
+print(plot.w2.facet.annot)
+
+@ 
+
+\caption{All tones for word 2, faceted}
+  \label{fig:plot-w2-facet}
+\end{figure}
+
+\clearpage
+
+\end{document}
+

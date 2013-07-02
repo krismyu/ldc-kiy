@@ -1,0 +1,89 @@
+%Time-stamp: <2013-06-18 13:52:22 amoebe>
+\documentclass{article}
+\usepackage{natbib}
+%\usepackage{fullpage}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable} % For splitting tables over pages
+\usepackage{Sweave}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{timestamp}
+%\usepackage[section] {placeins} % http://www.douglasvanbossuyt.com/2008/11/18/la%\SweaveOpts{keep.source=TRUE} % don't remove source code comments
+\SweaveOpts{prefix.string=figs/kiy-20111207} % save auto-generated figures in
+                                % figs/, prefixed by cant-f0creak-
+
+\setlength{\bibsep}{0.0pt}
+\setlength{\headheight}{15.2pt}
+\setlength{\headsep}{12pt}
+\pagestyle{fancyplain}
+\fancyhf{}
+
+\lhead{Kristine M. Yu}
+\rhead{ldc-kiy plots for Example 2.2.1 in paper, \timestamp}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\begin{document}
+  
+<<label = setup, echo = FALSE>>=
+
+# Load ggplot2 plotting library
+library(ggplot2)
+
+# Read in f0 extraction data from RAPT
+rapt1.dat <- read.table('espsData-1.txt', header = FALSE, col.names = c("fname", "time", "f0", "prob.voi", "rms", "ac.peak"))
+rapt2.dat <- read.table('espsData-2.txt', header = FALSE, col.names = c("fname", "time", "f0", "prob.voi", "rms", "ac.peak"))
+
+rapt.dat <- rbind(rapt1.dat,rapt2.dat) # append rapt2.dat to rapt1.dat
+
+# Remove rows where f0 undefined (voicing detection p.voi = 0)
+rapt.dat1 = rapt.dat[rapt.dat$prob.voi != 0,]
+
+# Add in item info
+
+# Extract item numbers from filename 'fname'
+
+#### Split filenames and assign item labels
+
+fname.info <- strsplit(as.character(rapt.dat1$fname), "-") # split filename by hyphens
+
+item <- sapply(fname.info, "[", 6)  # speaker
+               
+rapt.dat1$item <- sapply(item, function (x) sub('.f0', '', x))
+
+#### Merge in hash table info 
+
+# Read in hash table text files
+info.1 <- read.table('../1/info/20111207-1-kiy-ap-wordlist.txt', sep = '\t', header = FALSE, col.names = c("item.no", "kiy", "tone", "lex.class", "gloss"))
+
+info.2 <- read.table('../2/info/20111207-2-kiy-ap-wordlist.txt', sep = '\t', header = FALSE, col.names = c("item.no", "kiy", "tone", "lex.class", "gloss"))
+
+info.items <- rbind(info.1,info.2) # append hash table for -2- to -1-
+
+# Merge in hash table info
+rapt.dat1 <- merge(rapt.dat1, info.items[,c("item.no", "kiy", "gloss", "tone","lex.class")], by.x = "item", by.y = "item.no") 
+
+@ 
+
+
+\begin{figure}[h]
+  \centering
+  
+<<label = plot-unexplained, echo = FALSE, fig = TRUE, include = TRUE>>=
+
+plot.mess <- ggplot(rapt.dat1, aes(x = time, y = f0, group = fname)) + geom_line(size = 1) + labs(y = "f0 (Hz)", x = "Time (ms)") + opts(panel.background = theme_rect(), axis.text.x = theme_text(size=12,vjust=1), axis.text.y = theme_text(size=12,hjust=1), axis.title.x = theme_text(size = 14, vjust=-0.3,), axis.title.y = theme_text(size = 14, angle=90, vjust=0.4, hjust=0.5),panel.grid.major = theme_line(colour="gray"))
+
+print(plot.mess)
+
+@ 
+\caption{f0 contours from all recorded elicitation items from
+    20111207-1-kiy-ap-wordlist and 20111207-2-kiy-ap-framedwordlist.}
+  \label{fig:plot-mess}
+\end{figure}
+
+\clearpage
+
+\end{document}

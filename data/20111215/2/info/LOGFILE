@@ -1,0 +1,28 @@
+Time-stamp: <2013-05-09 23:57:04 amoebe>
+* GENERAL
+- All listed paths relative to /Users/amoebe/fkiy/ldc-kiy/kiy/20111215/2
+* [2013-05-09 Thu]
+** Chopped 20111215-2-kiy-ap-framedwordlist1.wav into individual files for each item-repetition.
+1. [X] Created intervals for each individual repetition (there were 2
+   reps per item) in Praat TextGrid, Tier 2 and wrote to 20111215-2-kiy-ap-framedwordlist1.TextGrid2
+2. [X] Wrote code in CODE SNIPPET 1 in
+   scripts/20111215-2-kiy-ap-framedwordlist.sh to create TextGrid
+   labeling file for repetitions, labeled repetitions a and b
+3. [X] Ran scripts/labelfromtextfile2-1.TextGrid to create
+   20111215-2-kiy-ap-framedwordlist1.TextGrid3, with Tier 2 with
+   item-rep labels, e.g. 1a, 1b, etc.
+4. [X] Ran scripts/save_labeled_intervals_to_wav_sound_files-1.praat to write
+   individual item-rep intervals as wav files to analysis/tokens/
+   - 50 tokens in total, from framedwordlist1, which ended at item 8.
+** Chopped 20111215-2-kiy-ap-framedwordlist2.wav into individual files for each item-repetition.
+1. [X] Created intervals for each individual repetition (there were 2
+   reps per item) in Praat TextGrid, Tier 2 and wrote to 20111215-2-kiy-ap-framedwordlist2.TextGrid2
+2. [X] Wrote code in CODE SNIPPET 2 in
+   scripts/20111215-2-kiy-ap-framedwordlist.sh to create TextGrid
+   labeling file for repetitions, labeled repetitions a and b
+3. [X] Ran scripts/labelfromtextfile2-2.TextGrid to create
+   20111215-2-kiy-ap-framedwordlist2.TextGrid3, with Tier 2 with
+   item-rep labels, e.g. 1a, 1b, etc.
+4. [X] Ran scripts/save_labeled_intervals_to_wav_sound_files-2.praat to write
+   individual item-rep intervals as wav files to analysis/tokens/
+   - 50 tokens in total, from framedwordlist2 (from item 68 to item 34)

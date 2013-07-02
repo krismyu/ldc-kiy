@@ -1,0 +1,122 @@
+
+* Figures for paper
+- [ ] Add overlapping rectangle/partition/subsets for explaining variance
+- [ ] Add figure of pitch variation over an elicitation session or
+  several elicitation sessions
+- [ ] Add figure of pitch variation between the same word that varied
+  between session without us being sure why that happend?
+- [ ] Diagram of experimental unit, word within utterance, observation
+- [ ] Blocking variable and SSR decomposition?
+* Writing for paper
+- [X] Write up latent variable
+- [X] Add section about controlling and fixing level as one block
+- [ ] Add f0 vs. pitch
+- [X] Write up independent variable
+- [X] Write up confounding variables table
+- [ ] Connect subsetting to including covariates 
+- [X] Add in note about leaving off specification of word within
+  experimental unit
+- [ ] Add in note about small caps, itatlistic, etc.
+- [ ] Add in technial mening of variance and "hugt"e and "Small"
+  variance accounted for
+- [ ] fillers
+- [ ] Note on research hypotheses vs. null hypotheses
+- [ ] Fix linking hypothesis for Lai
+- [ ] Add factors
+- [ ] Add EDA note
+- [ ] repetition vs. replication
+- [ ] sampling, generalization to population
+- [ ] add in moving from tonal class to tonal sequence?
+- [ ] Fix numbering for research hypotheses, variables
+* Examples for paper
+- [ ] Add kiy latent variable
+      EXAMPLE OF EARLIEST ELICITATION: JUST ELICITING WORDS IN ISOLATION,
+      MINIMAL SET AS LIMITING CASE---NOTE THAT MINIMAL SET MEANS THAT ALL
+      CONTEXTUAL INFLUENCES ARE ACCOUNTED FOR!!! NOT JUST ``THE SAME
+      WORD''.  
+  
+  EXPERIMENTAL UNIT IS EACH ELICITATION ITEM, NOT EACH WORD
+  
+  EXAMPLE: KIRIKIRI WORDS
+  
+  EXAMPLE: RESIDUAL
+  FACTORIAL DESIGNS
+  SAMOAN, OVER ALL WORD ORDERS
+- [ ] Add Samoan example?
+- [ ] Voice quality: Igbo
+- [ ] Blocking: variability within blocking vs. without
+- [ ] Example: order effects
+- [ ] Add kiy vowel height example
+* Example tables to export
+| item | kiy     | gloss           | tones |
+|------+---------+-----------------+-------|
+|    1 | nabi(y) | dog             | M.L   |
+|    2 | sije    | pig             | M.L   |
+|    3 | paRaj   | bandicoot       | M.ML  |
+|    4 | fiya    | fish sp         | L.M   |
+|    5 | kribu:  | snake sp        | M.ML  |
+|    6 | tE.E    | mosquito        | M.L   |
+|    7 | te.e    | child           | L.M   |
+|    8 | fri.i   | louse           | M.L   |
+|    9 | fOi.i   | crocodile       | M.H   |
+|   10 | kE.E    | ant             | M.L   |
+|   11 | kwi.i   | tree cascus     | M.H   |
+|   12 | fO.O    | wallaby         | M.L   |
+|   13 | fO.O    | grass           | M.M   |
+|   14 | fO.O    | fingernail      | L.M   |
+|   15 | kwa.a   | house           | M.M   |
+|   16 | kwa.a   | name            | M.L   |
+|   17 | Do.o    | tree            | M.L   |
+|   18 | ko.o    | woman           | M.L   |
+|   19 | na.a    | rain            | M.M   |
+|   20 | pa.a    | younger sibling | L.M   |
+|   21 | pa.a    | sago            | M.M   |
+|   22 | ke.e    | ear             | M.L   |
+|   23 | ki.i    | leech           | M.H   |
+|   24 | a.i     | father          | M.L   |
+|   25 | ja.a    | mother          | M.M   |
+|   26 | kro.o   | frog            | M.H   |
+|   27 | sE.ri:  | hornbill        | M.L   |
+|   28 | kaza    | gecko           | L.M   |
+
+* Refs
+- Fix f0 measures table
+- [X] Add Espo's new paper on White Hmong for generalization thing
+-
+-
+* F0/pitch stuff
+1. f0 vs. pitch vs. tone
+   - Diagram of waveform with f0
+   - Explain acoustic vs. perceptual
+2. More detail on f0
+   1. Transcription and detail, the role of recordings
+      - Time processing phonetic data
+      - Now recordings are cheap
+      - summary elicitations
+      - automated alignment, but need dictionary
+      - What do recordings get you? f0 detection, resynthesis
+        - Toney
+        - 
+      - Tutorials -> organizing files, processing data, may be
+        outdated
+   2. f0 detection [ see tutorial ] 
+      - 
+      - measure by hand
+      - EGG
+      - important to know 
+      - autocorrelation
+        - Flip and shift
+      - cepstrum
+      - narrow-band
+      - perturbations and voice quality
+      - why bother with transcription at all?
+        - Toney does it all?
+        - Need to choose level of relevant detail
+        - acoustics vs. perception
+3. f0 a set of parameters
+   - transcription and resolution
+   - different ways of parameterizing f0
+   - normalization
+4. beyond f0: voice quality
+* Latex conversion
+- Fix tables

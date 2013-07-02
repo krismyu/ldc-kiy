@@ -1,0 +1,50 @@
+Time-stamp: <2013-06-19 23:24:31 amoebe>
+LIST OF FILES IN ROOT DIRECTORY
+
+0. README: this document
+1. kiy-docx.pdf: pdf file generated from docx file
+2. kiy.docx: docx file submission
+
+Table 17 is included as an image, table17.pdf in fig/
+
+LIST OF FIGURE FILES in fig/ DIRECTORY
+1. pike-tikz
+2. words-tikz
+3. sub-tikz
+4a. triangle3-tikz
+4b. triangle-tikz
+4c. triangle2-tikz
+5. kiy-20111207-plot-unexplained
+6a. kiy-20111208-plot-unexplained
+6b. kiy-20111208-plot-iso
+7a. kiy-20111208-plot-targets-niso-mess
+7b. kiy-20111208-plot-targets-niso
+8. kiy-20111213-plot-all-by-tone
+9a. kiy-20111213-plot-w1
+9b. kiy-20111213-plot-w2
+10a. kiy-20111213-plot-w1-facet
+10b. kiy-20111213-plot-w2-facet
+11. period-tikz
+12. squarewavs-tikz
+13. square-tikz
+14. squarewavsshift-tikz
+15a. square0-tikz
+15b. square4-tikz
+15c. square8-tikz
+15d. square12-tikz
+15e. square16-tikz
+15f. square12r-tikz
+15g. square8r-tikz
+15h. square4r-tikz
+15i. square0r-tikz
+16. trianglefxn-tikz
+17. toothfxn-tikz
+18. vf
+19. pd2
+20a. res-2-tikz
+20b. res-3-tikz
+20c. res-5-tikz
+20d. res-10-tikz
+20e. res-100-tikz
+21. poly-tikz
+22. deriv2-tikz

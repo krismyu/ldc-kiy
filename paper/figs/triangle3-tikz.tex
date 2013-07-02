@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc}
+\begin{document}
+
+\begin{tikzpicture}[to/.style={->,>=latex,thick,font=\sffamily\normalsize}]
+
+ \coordinate (a) at (0,0);
+ \coordinate (b) at (0,8);
+
+ \draw[to] (a) -- (b) node[midway,above, rotate=90] {$Unexplained\,\,variance = Total\,\,variance$};
+\end{tikzpicture}
+\end{document}

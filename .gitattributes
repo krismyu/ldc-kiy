@@ -1,0 +1,4 @@
+*.wav filter=fat -crlf
+*.mp4 filter=fat -crlf
+*.tgz filter=fat -crlf
+*.gz filter=fat -crlf

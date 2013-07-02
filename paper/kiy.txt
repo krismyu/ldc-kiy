@@ -1,0 +1,29 @@
+item	kiy	gloss	tones
+1	nabi(y)	dog	M.L
+2	sije	pig	M.L
+3	paRaj	bandicoot	M.ML
+4	fiya	fish sp	L.M
+5	kribu:	snake sp	M.ML
+6	tE.E	mosquito	M.L
+7	te.e	child	L.M
+8	fri.i	louse	M.L
+9	fOi.i	crocodile	M.H
+10	kE.E	ant	M.L
+11	kwi.i	tree cascus	M.H
+12	fO.O	wallaby	M.L
+13	fO.O	grass	M.M
+14	fO.O	fingernail	L.M
+15	kwa.a	house	M.M
+16	kwa.a	name	M.L
+17	Do.o	tree	M.L
+18	ko.o	woman	M.L
+19	na.a	rain	M.M
+20	pa.a	younger sibling	L.M
+21	pa.a	sago	M.M
+22	ke.e	ear	M.L
+23	ki.i	leech	M.H
+24	a.i	father	M.L
+25	ja.a	mother	M.M
+26	kro.o	frog	M.H
+27	sE.ri:	hornbill	M.L
+28	kaza	gecko	L.M

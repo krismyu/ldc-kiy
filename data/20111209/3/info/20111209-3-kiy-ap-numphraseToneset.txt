@@ -1,0 +1,71 @@
+item	gloss	kirikiri	tone-iso	tone-context	frame
+1	fish arrow	foro	44	24	iso
+2	night	krakaw	44	24	iso
+3	string	koree	44	24	iso
+4	fish arrow	foro	44	24	one-L
+5	night	krakaw	44	24	one-L
+6	string	koree	44	24	one-L
+7	fishnet	faare	12.31	24	iso
+8	shoulder blade	novii	12.31	24	iso
+9	taro	kekee	12.31	24	iso
+10	person	tirii	12.31	24	iso
+11	chin	kwawaa	12.31	24	iso
+12	nose	bajzaa	12.31	24	iso
+13	tooth	urii	12.31	24	iso
+14	torso	korEE	12.31	24	iso
+15	boat	oruu	12.31	24	iso
+16	parrot	terjaa	12.31	24	iso
+17	wasp	naraa	12.31	24	iso
+18	cheek	noree	12.31	24	iso
+19	machete	najaa	12.31	24	iso
+20	fishnet	faare	12.31	24	one-L
+21	shoulder blade	novii	12.31	24	one-L
+22	taro	kekee	12.31	24	one-L
+23	person	tirii	12.31	24	one-L
+24	chin	kwawaa	12.31	24	one-L
+25	nose	bajzaa	12.31	24	one-L
+26	tooth	urii	12.31	24	one-L
+27	torso	korEE	12.31	24	one-L
+28	boat	oruu	12.31	24	one-L
+29	parrot	terjaa	12.31	24	one-L
+30	wasp	naraa	12.31	24	one-L
+31	cheek	noree	12.31	24	one-L
+32	machete	najaa	12.31	24	one-L
+33	snail	fivaa	42	42	iso
+34	sago bark	tavoo	42	42	iso
+35	star	foroo	42	42	iso
+36	bow	boraj	42	42	iso
+37	sweet potato	maakoo	42	42	iso
+38	snail	fivaa	42	42	one-L
+39	sago bark	tavoo	42	42	one-L
+40	star	foroo	42	42	one-L
+41	bow	boraj	42	42	one-L
+42	sweet potato	maakoo	42	42	one-L
+43	dog	nabii	23	24	iso
+44	breadfruit	merii	23	24	iso
+45	gecko	kaza	23	24	iso
+46	tongue	oraa	23	24	iso
+47	basket	nari	23	24	iso
+48	hole	kwarii	23	24	iso
+49	island	waBii	23	24	iso
+50	dog	nabii	23	24	one-L
+51	breadfruit	merii	23	24	one-L
+52	gecko	kaza	23	24	one-L
+53	tongue	oraa	23	24	one-L
+54	basket	nari	23	24	one-L
+55	hole	kwarii	23	24	one-L
+56	island	waBii	23	24	one-L
+57	pig	sie	31	33	iso
+58	bandicoot	paRai	31	33	iso
+59	bat	torii	31	33	iso
+60	grasshopper	kazii	31	33	iso
+61	elbow	giRu	31	33	iso
+62	cloud	fira	31	33	iso
+63	pigeon	maRuu	31	33	iso
+64	pig	sie	31	33	one-L
+65	bandicoot	paRai	31	33	one-L
+66	bat	torii	31	33	one-L
+67	grasshopper	kazii	31	33	one-L
+68	elbow	giRu	31	33	one-L
+69	cloud	fira	31	33	one-L
+70	pigeon	maRuu	31	33	one-L

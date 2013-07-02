@@ -1,0 +1,133 @@
+130	piece of cut wood	ti	5	1	n	
+111	hello	mogohara	4	4	greeting	
+25	see (3plpr)	fuwa	1	2	v	
+9	blood	kru	1	1	n	
+69	thigh	fa	3	1	n	
+29	fire	kwE	1	1	n	
+107	lower leg	figi	4	2	n	
+91	person	tirii	4	2	n	
+36	woman	ku	1	1	n	
+59	thing	ndi	2	1	n	
+46	buttocks	fo	2	1	n	
+7	pigeon	maRuu	1	2	n	
+66	sweet potato	maakoo	3	2	n	
+68	name	kwa	3	1	n	
+26	catch (3plpr)	kwa	1	1	v	
+104	kidney	parau	4	2	n	
+75	edge	uraga	3	3	n	
+90	taro	kekee	4	2	n	
+123	mother	ya	5	1	n	
+112	cut down	guda	4	2	v	
+13	eat! (V)	ta	1	1	v	
+2	bandicoot	paRai	1	2	n	
+56	close	faya	2	2	v	
+130	water	na	5	1	n	
+125	breast	du	5	1	n	
+70	navel	fu	3	1	n	
+109	neck	kuRai	4	2	n	
+106	fat	fovra	4	2	n	
+102	hot	kwataw	4	2	adj	
+128	noken	ndi	5	1	n	
+53	snot	kwaro	2	2	n	
+110	rib	teRei	4	2	n	
+43	island	waBii	2	2	n	
+3	bat	torii	1	2	n	
+21	intestines	tawu	1	2	n	
+18	lizard	terevaa	1	3	n	
+83	ear	kE	3	1	n	
+62	snail	fivaa	3	2	n	
+64	star	fOrOO	3	2	n	
+84	scrotum	kwii	3	1	n	
+23	sister	Oya	1	2	n	
+54	net	nari	2	2	n	
+42	hole	kwarii	2	2	n	
+76	cooking pot (lw)	belaNa	3	3	n	
+67	wallaby	fO	3	1	n	
+114	fish arrow	foro	5	2	n	
+38	breadfruit	merii	2	2	n	
+117	grass	fO	5	1	n	
+31	handle of a string bag	ku	1	1	n	
+15	bark (for thread)	miitari	1	3	n	
+28	ant	kee	1	1	n	
+24	bad	fewi	1	2	adj	
+34	sky	na	1	1	n	
+35	urine	ti	1	1	n	
+74	orchid	orUsa	3	3	n	
+127	banana	kri	5	1	n	
+47	younger sibling	fa	2	1	n	
+85	skin, bark 	fi	3	1	n	
+122	catfish	tava	5	2	n	Maybe not in Cat.5?
+129	ironwood	ndi	5	1	n	
+10	feces	fa	1	1	n	
+95	torso	korEE	4	2	n	
+118	house	kwa	5	1	n	
+14	picture	se	1	1	n	
+52	mouth	mOra	2	2	n	
+51	muddy	foReu	2	2	adj	
+94	tooth	urii	4	2	n	
+72	honeybee	fO	3	1	n	
+1	pig	sie	1	2	n	
+93	nose	bajzaa	4	2	n	
+65	bow	boraj	3	2	n	
+58	lips	kwii	2	1	n	
+55	top	tara	2	2	n	
+99	cheek	noree	4	2	n	
+37	dog	nabii	2	2	n	
+115	night	krakaw	5	2	n	
+30	ear	kE	1	1	n	
+44	fingernail	fO	2	1	n	
+71	child (address term)	fo	3	1	n	
+32	red kind of fruit	fie	1	1	n	
+82	guitar	ka	3	1	n	
+105	cheek	novrii	4	2	n	
+116	string	koree	5	2	n	
+77	groin	faRo	3	2	n	
+50	meat	nO	2	1	n	
+22	parent-in-law	nOri	1	2	n	
+87	bone	ki	3	1	n	
+27	centipede	nee	1	1	n	
+120	place	ta	5	1	n	
+12	ridgebeam	fU	1	1	n	Move to Cat.5?
+97	parrot	terjaa	4	2	n	
+4	grasshopper	kazii	1	2	n	
+5	elbow	giRu	1	2	n	
+80	chase	fagiya	3	3	v	
+119	sago grub	fa	5	1	n	
+39	gecko	kaza	2	2	n	
+79	carry	kwiya	3	2	v	
+41	basket	nari	2	2	n	
+103	ripe	kwayna	4	2	adj	
+130	sun	to	5	1	n	
+45	woodchips	krU	2	1	n	
+63	sago bark	tavoo	3	2	n	
+98	wasp	naraa	4	2	n	
+17	Dani people	wavisaa	1	3	n	
+88	fishnet	faare	4	2	n	
+126	leech	ki	5	1	n	
+49	head	ta	2	1	n	
+108	lower arm	dugu	4	2	n	
+20	song	Rwiya	1	2	n	
+78	cold	fugwa	3	2	adj	
+6	cloud	fira	1	2	n	
+113	tree sp.	ta	4	1	n	
+101	bachelor	modukri	4	3	n	
+96	boat	Oruu	4	2	n	
+16	foam	nawataa	1	3	n	
+57	gave	maRu	2	2	v	
+19	mug	mooRaro	1	3	n	
+8	net	fare	1	2	n	Move to Cat.2?
+89	shoulder blade	novii	4	2	n	
+48	body hair	krU	2	1	n	
+33	fence	ndei	1	1	n	
+124	yesterday	duu	5	1	time	
+81	cut	friya	3	2	v	
+73	butterfly	owafi	3	3	n	
+40	tongue	Oraa	2	2	n	
+92	chin	kwawaa	4	2	n	
+61	fish tail	tu	2	1	n	
+121	sun, moon	tO	5	1	n	
+86	banana piece	ka	3	1	n	
+60	corpse	ndu	2	1	n	
+130	eye	kra	5	1	n	could be a Cat.1?
+100	machete	najaa	4	2	n	
+11	fart	fu	1	1	n	Move to cat.2?

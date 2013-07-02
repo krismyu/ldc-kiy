@@ -1,0 +1,27 @@
+item	English	Kirikiri	Subject Tone Category
+1	house	kwa	5
+2	in the house	kwaRei	5
+3	to the house	kwaygiya	5
+4	from the house	kwaRei	5
+5	on the house	kwatara	5
+6	under the house	kwayra	5
+7	in the boat	oru Rei	4
+8	in the basket	nari no Rei	2
+9	in the cloud	fira no Rei	1
+10	on the boat	oru tara Rei	4
+11	on the basket	nara tara Rei	2
+12	on the cloud	fira tara Rei	1
+13	on the head	taa tara Rei	2
+14	on the honeybee	fo tara Rei	3
+15	on the feces	fa taraRei	1
+16	on the picture	si tara Rei	1
+17	on the blood	kru tara Rei	1
+18	on the meat	no tara Rei	2
+19	On the fingernail	fo tara Rei	2
+20	on the wallaby	fo tara Rei	3
+21	on the naval	fu tara Rei	3
+22	on the snail	fiva tara Rei	3
+23	on the wasp	nara tara Rei	4
+24	on the grass	fo tara Rei	5
+25	on the sago grub	fa tara Rei	5
+26	on the fish arrow	foro tara Rei	5

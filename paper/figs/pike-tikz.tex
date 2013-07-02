@@ -1,0 +1,136 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows,fit,calc,decorations.markings,positioning}
+\tikzstyle{container} = [draw, very thick, dashed, rectangle, rounded
+corners, inner sep=2.5em, fill = yellow!20 ]
+
+\begin{document}
+
+% Define the layers to draw the diagram
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+%\begin{center}
+\begin{tikzpicture}[
+  font=\sffamily,
+  every matrix/.style={ampersand replacement=\&,column sep=5cm,row sep=2cm},
+  source/.style={draw,thick,rounded corners,fill=blue!20,inner sep=.2cm},
+  sink/.style={source,fill=green!20},
+  dots/.style={gray,scale=2},
+  to/.style={->,>=stealth',shorten >=1pt,thick,font=\sffamily\normalsize},
+  every node/.style={align=center},
+    decoration={
+      markings,
+      mark=at position 1 with {\arrow[scale=1,black]{triangle 60}};
+    }
+]
+
+
+  % Position the nodes using a matrix layout
+  \matrix{
+    % Row 1
+%    \node[sink] (words) {\textbf{UNCLASSIFIED}\\ \textbf{WORDS}};  \&
+%    \& \\
+    % Row 2
+      \node[source] (morph) {\textbf{Classify word (morphology)} \\
+      Lexical class (N, V, Adj, $\ldots$) \\ Morphological complexity
+      \\ $\vdots$}; 
+
+       \& \node[source] (sub-frame) {\textbf{Choose substitution
+          frame} \\ \textbf{for $\mathcal{W}_{\gamma}$}\\ Pragmatic context \\ Prosodic position for word \\
+      $\vdots$};\\
+
+
+    % Row 3
+    \node[source] (phon) {\textbf{Classify word (phonology)}\\ Length (TBU) \\
+      Syllabic structure \\ Stress assignment \\ Segmental structure
+      \\ $\vdots$};
+
+       \&  \node[source] (tone) {\textbf{Sort items in
+           word class $\mathcal{W}_{\gamma}$ (substitution list)} \\ \textbf{into groups by pitch
+          contour}};\\
+      \&\&\\ % Buffer row
+      % Row 4
+%    \node[sink] (classes) {\textbf{WORD CLASSES} \\ \textbf{(Substitution lists)}}; \& \& \\
+    };
+
+
+
+    \begin{pgfonlayer}{background}
+
+ \node[container, fit=(phon) (morph)] (class) {};
+    \node at (class.north) [above, node distance=0 and 0]
+    {\textbf{Classify words by} \\ \textbf{morpho-phonological structure}};
+
+ \node[container, fit=(sub-frame) (tone)] (sub) {};
+    \node at (sub.north) [above, node distance=0 and 0]
+    {\textbf{Classify substitution items by pitch} \\ \textbf{in controlled contexts}};
+
+    \node at (sub.north west) [below right, node distance=0 and 0]
+    {\textbf{for a WORD CLASS $W_{\gamma}$:}};
+
+    \end{pgfonlayer}
+
+    % Relative node placement
+    \node[sink] at ($(class.west)-(1,0)$) [above] (unclassed)
+    {\textbf{UNCLASSIFIED} \\ \textbf{WORDS}}; 
+
+    \node[sink] at ($(class.east)+(1,0)$) [above] (classed) 
+    {\textbf{WORD CLASSES} \\ \textbf{(Substitution lists)}}; 
+
+    \node[sink] at ($(sub.east)+(1,0)$) [above] (tone-class) 
+    {\textbf{TONE CLASSES} \\ \textbf{(Tentative)}}; 
+
+  % Draw the arrows between the nodes and label them.
+    \begin{pgfonlayer}{background}
+
+
+  \path[draw,to, line width = 1mm] ($(unclassed.north)$)  |- node[above,pos=0] {} ($(morph.west)-(1,0)$);
+
+  \path[draw,to, line width = 1mm] ($(phon.east)+(1,0)$)  -| node[above,pos=0] {} ($(classed.south)-(0.3,0)$);
+
+  \path[draw,to, line width = 1mm] ($(tone.east)+(1,0)$)  -| node[above,pos=0] {} ($(tone-class.south)+(0.3,0)$);
+
+
+    \path[draw,to, line width = 1mm] ($(classed.north)+(0.3,0)$)  |-
+    node[above right=0.4mm of classed] {Class 1} ($(sub-frame) -(3.5,0)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=0.4mm of classed] {Class 2} ($(sub-frame) -(3.5,0.5)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=0.4mm of classed] {Class 3} ($(sub-frame) -(3.5,1)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=0.4mm of classed] {Class 4} ($(sub-frame) -(3.5,1.5)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=0.4mm of classed] {Class 5} ($(sub-frame) -(3.5,2)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=0.4mm of classed] {Class 6} ($(sub-frame) -(3.5,2.5)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=1mm of classed] {$\vdots$} ($(sub-frame) -(3.5,3)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=0.4mm of classed] {Class $i$} ($(sub-frame) -(3.5,3.5)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-
+  node[above right=1mm of classed] {$\vdots$} ($(sub-frame) -(3.5,4)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.south)+(0.3,0)$)  |-
+  node[above right=0.4mm of classed] {Class $n$} ($(tone) -(3.5,0)$);
+
+  \path[draw,to, line width = 1mm] ($(classed.north)+(0.3, 0)$) |-  ($(sub-frame) -(3.5,0.5)$);
+
+\draw[draw, to, line width = 1mm] ($(tone.south)+(-2,-1)$) to[bend right=60]
+node[below=1mm of tone]  {\textbf{REPEAT FOR EACH} \\
+  \textbf{SUBSTITUTION FRAME} $\mathcal{F}_j$ \\\textbf{for WORD CLASS} $\mathcal{W}_{\gamma}$} ($(tone.south)+(2,-1)$);
+
+\end{pgfonlayer}
+
+\end{tikzpicture}
+%\end{center}
+\end{document}

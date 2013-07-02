@@ -1,0 +1,26 @@
+item	kirikiri	gloss	tone1	tone2	frame	word1	word2
+1	paRai giRu	bandicoot's elbow	1	1	11	paRai	giRu
+2	kaza giRu	gecko's elbow	2	1	21	kaza	giRu
+3	fivaa giRu	snail's elbow	3	1	31	fivaa	giRu
+4	naraa giRu	wasp's elbow	4	1	41	naraa	giRu
+5	tava giRu	catfish's elbow	5	1	51	tava	giRu
+6	paRai ora	bandicoot's tongue	1	2	12	paRai	ora
+7	kaza ora	gecko's tongue	2	2	22	kaza	ora
+8	fivaa ora	snail's tongue	3	2	32	fivaa	ora
+9	naraa ora	wasp's tongue	4	2	42	naraa	ora
+10	tava ora	catfish's tongue	5	2	52	tava	ora
+11	paRai faRo	bandicoot's groin	1	3	13	paRai	faRo
+12	kaza faRo	gecko's groin	2	3	23	kaza	faRo
+13	fivaa faRo	snail's groin	3	3	33	fivaa	faRo
+14	naraa faRo	wasp's groin	4	3	43	naraa	faRo
+15	tava faRo	catfish's groin	5	3	53	tava	faRo
+16	paRai kwawaa	bandicoot's chin	1	4	14	paRai	kwawaa
+17	kaza kwawaa	gecko's chin	2	4	24	kaza	kwawaa
+18	fivaa kwawaa	snail's chin	3	4	34	fivaa	kwawaa
+19	naraa kwawaa	wasp's chin	4	4	44	naraa	kwawaa
+20	tava kwawaa	catfish's chin	5	4	54	tava	kwawaa
+21	paRai koRee	bandicoot's string	1	5	15	paRai	koRee
+22	kaza koRee	gecko's string	2	5	25	kaza	koRee
+23	fivaa koRee	snail's string	3	5	35	fivaa	koRee
+24	naraa koRee	wasp's string	4	5	45	naraa	koRee
+25	tava koRee	catfish's string	5	5	55	tava	koRee

@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+\foreach \ini [evaluate=\ini as \inieval using 2*\ini] in {0,...,6}
+\draw[ultra thick,black] (\inieval,0) -- ++(0,1) -| (\inieval+1,0) -- (\inieval+2,0);
+\end{tikzpicture}
+
+\end{document}

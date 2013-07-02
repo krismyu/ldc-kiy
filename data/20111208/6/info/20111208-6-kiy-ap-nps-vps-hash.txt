@@ -1,0 +1,37 @@
+item	target	kiy	gloss	lex.class	len.syll	frame	tone
+1	koo	koo	black	adj	1	iso	MH
+2	kee	kee koo	black ant	n	1	adj-black	ML MH
+3	foo	foo koo	black wallaby	n	1	adj-black	ML MH
+4	kuu	kuu	female	adj	1	iso	ML
+5	kee	kee kuu	female  ant	n	1	adj-female	ML L-falling
+6	foo	foo kuu	female wallaby	n	1	adj-female	ML L-falling
+7	soo	soo	small	adj	1	iso	LM
+8	kee	kee soo	small ant	n	1	adj-small	ML LM
+9	foo	foo soo	small wallaby	n	1	adj-small	ML LM
+10	kee	kee	ant	n	1	iso	ML
+11	foo	foo	wallaby	n	1	iso	ML
+12	fijree	fijree	large	adj	2	iso	M.ML
+13	kee	kee fijree	large ant	n	1	adj-large	ML L.ML
+14	foo	foo fijree	large wallaby	n	1	adj-large	ML L.ML
+15	siji	siji taru	the pig sleeps	n	2	vp-sleep	M M.L
+16	nabij	nabij taru	the dog is sleeping	n	2	vp-sleep	M.H M.L
+17	parai	parai taru	the bandicoot is sleeping	n	2	vp-sleep	M.M M.L
+18	foo	foo taru	the wallaby is sleeping	n	1	vp-sleep	H> M.L
+19	kaza	kaza taro	the gecko is sleeping	n	2	vp-sleep	M.H ML
+20	siji	siji	pig	n	2	iso	M.L
+21	nabij	nabij	dog	n	2	iso	M.MH
+22	parai	parai	bandicoot	n	2	iso	M.ML
+23	foo	foo	wallaby	n	1	iso	ML
+24	kaza	kaza	gecko	n	2	iso	L.LM
+25	siji	siji kwaa zari	the pig is making a sound	n	2	vp-sound	M L L.M
+26	nabij	nabij kwaa zari	the dog is making a sound	n	2	vp-sound	M.H L L.M
+27	parai	parai kwaa zari	the bandicoot is making a sound	n	2	vp-sound	M.M L L.M
+28	foo	foo kwaa zari	the wallaby is making a sound	n	1	vp-sound	HM L L.M
+29	kaza	kaza kwaa zari	the gecko is making a sound	n	2	vp-sound	MH L L.M
+30	kruuw	kruuw kwaa zari	the frog is making a sound	n	1	vp-sound	H L  L.M
+31	kee	kee kwaa zari	the ant is making a sound	n	1	vp-sound	HM L L.M
+32	fuu	fuu kwaa zari	the honey bee is making a sound	n	1	vp-sound	HM L L.M
+33	tidu	tidu kwaa zari	the kingfisher is making a sound	n	2	vp-sound	ML L L.M
+34	kruuw	kruuw	frog	n	1	iso	MH
+35	fuu	fuu	honey bee	n	1	iso	HL
+36	tidu	tidu	kingfisher	n	2	iso	ML

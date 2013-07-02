@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{pgfplots}
+\makeatletter
+\pgfplotsset{
+    /tikz/max node/.style={
+        anchor=south,
+    },
+    /tikz/min node/.style={
+        anchor=north,
+        name=minimum
+    },
+    mark min/.style={
+        point meta rel=per plot,
+        visualization depends on={x \as \xvalue},
+        scatter/@pre marker code/.code={%
+            \ifx\pgfplotspointmeta\pgfplots@metamin
+                \def\markopts{}%
+                \coordinate (minimum);
+                \node [min node] {
+                    \pgfmathprintnumber[fixed]{\xvalue},%
+                    \pgfmathprintnumber[fixed]{\pgfplotspointmeta}
+                };
+            \else
+                \def\markopts{mark=none}
+            \fi
+            \expandafter\scope\expandafter[\markopts,every node near coord/.style=green]
+        },%
+        scatter/@post marker code/.code={%
+            \endscope
+        },
+        scatter,
+    },
+    mark max/.style={
+        point meta rel=per plot,
+        visualization depends on={x \as \xvalue},
+        scatter/@pre marker code/.code={%
+        \ifx\pgfplotspointmeta\pgfplots@metamax
+            \def\markopts{}%
+            \coordinate (maximum);
+            \node [max node] {
+                \pgfmathprintnumber[fixed]{\xvalue},%
+                \pgfmathprintnumber[fixed]{\pgfplotspointmeta}
+            };
+        \else
+            \def\markopts{mark=none}
+        \fi
+            \expandafter\scope\expandafter[\markopts]
+        },%
+        scatter/@post marker code/.code={%
+            \endscope
+        },
+        scatter
+    }
+}
+\makeatother
+
+\begin{document}
+
+\begin{tikzpicture}
+    \begin{axis}[
+    hide axis,
+    xtick={0,...,7},
+    domain=0:7,
+    axis lines*=middle
+    ]       
+    \addplot plot {0.001826*x^4-0.02873*x^3+0.1066*x^2+0.03454*x+0.003613};
+    \end{axis}
+\end{tikzpicture}
+\end{document}
